@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "jakemod:block/polished_andesite_bricks"
+  }
+}

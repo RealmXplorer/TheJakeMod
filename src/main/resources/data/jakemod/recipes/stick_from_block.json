@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "jakemod:stick_block"
+  }
+],
+
+  "result": {
+    "item": "minecraft:stick",
+    "count": 9
+  }
+}

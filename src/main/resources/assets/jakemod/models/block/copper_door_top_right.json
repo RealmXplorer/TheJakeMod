@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "jakemod:block/copper_door_bottom",
+    "top": "jakemod:block/copper_door_top"
+  }
+}

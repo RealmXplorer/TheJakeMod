@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "jakemod:block/stick_block_top",
+    "side": "jakemod:block/stick_block_side"
+  }
+}

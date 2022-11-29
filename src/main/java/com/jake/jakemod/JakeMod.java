@@ -1,6 +1,13 @@
 package com.jake.jakemod;
 
+import com.jake.jakemod.block.ModBlocks;
+import com.jake.jakemod.item.ModItems;
+import com.jake.jakemod.sound.ModSounds;
+import com.jake.jakemod.world.feature.ModConfiguredFeatures;
+import com.jake.jakemod.world.feature.ModPlacedFeatures;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,11 +30,23 @@ public class JakeMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModSounds.register(modEventBus);
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::clientSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
+    private void clientSetup(final FMLClientSetupEvent event) {
+        //   ItemBlockRenderTypes.setRenderLayer(ModBlocks.COPPER_DOOR.get(), RenderType.translucent());
+    //    ItemBlockRenderTypes.setRenderLayer(ModBlocks.COPPER_TRAPDOOR.get(), RenderType.translucent());
+
+    }
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         // Some common setup code

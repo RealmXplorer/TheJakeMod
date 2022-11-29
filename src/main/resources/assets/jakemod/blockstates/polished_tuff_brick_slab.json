@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "jakemod:block/polished_tuff_brick_slab"
+    },
+    "type=double": {
+      "model": "jakemod:block/polished_brick_tuff"
+    },
+    "type=top": {
+      "model": "jakemod:block/polished_tuff_brick_slab_top"
+    }
+  }
+}

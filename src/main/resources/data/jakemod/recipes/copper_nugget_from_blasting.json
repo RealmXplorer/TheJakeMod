@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "copper_nugget",
+"ingredient": [
+  {
+    "item": "jakemod:copper_pickaxe"
+  },
+  {
+    "item": "jakemod:copper_shovel"
+  },
+  {
+    "item": "jakemod:copper_axe"
+  },
+  {
+    "item": "jakemod:copper_hoe"
+  },
+  {
+    "item": "jakemod:copper_sword"
+  },
+  {
+    "item": "jakemod:copper_helmet"
+  },
+  {
+    "item": "jakemod:copper_chestplate"
+  },
+  {
+    "item": "jakemod:copper_leggings"
+  },
+  {
+    "item": "jakemod:copper_boots"
+  }
+],
+  
+  "result": "jakemod:copper_nugget"
+}

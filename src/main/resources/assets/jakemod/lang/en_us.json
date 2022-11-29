@@ -1,0 +1,84 @@
+{
+  "item.jakemod.zircon": "Zircon",
+  "item.jakemod.raw_zircon": "Raw Zircon",
+
+  "item.jakemod.copper_nugget": "Copper Nugget",
+
+  "item.jakemod.copper_sword": "Copper Sword",
+  "item.jakemod.copper_pickaxe": "Copper Pickaxe",
+  "item.jakemod.copper_axe": "Copper Axe",
+  "item.jakemod.copper_shovel": "Copper Shovel",
+  "item.jakemod.copper_hoe": "Copper Hoe",
+
+  "item.jakemod.copper_helmet": "Copper Helmet",
+  "item.jakemod.copper_chestplate": "Copper Chestplate",
+  "item.jakemod.copper_leggings": "Copper Leggings",
+  "item.jakemod.copper_boots": "Copper Boots",
+
+  "item.jakemod.amethyst_sword": "Amethyst Sword",
+
+  "item.jakemod.granite_sword": "Granite Sword",
+  "item.jakemod.granite_pickaxe": "Granite Pickaxe",
+  "item.jakemod.granite_axe": "Granite Axe",
+  "item.jakemod.granite_shovel": "Granite Shovel",
+  "item.jakemod.granite_hoe": "Granite Hoe",
+
+  "item.jakemod.cocoa_powder": "Cocoa Powder",
+  "item.jakemod.chocolate_bar": "Chocolate Bar",
+
+  "item.jakemod.ruby": "Ruby",
+
+  "item.jakemod.crown": "Crown",
+
+  "block.jakemod.polished_granite_bricks": "Polished Granite Bricks",
+  "block.jakemod.polished_granite_brick_stairs": "Polished Granite Brick Stairs",
+  "block.jakemod.polished_granite_brick_slab": "Polished Granite Brick Slab",
+  "block.jakemod.polished_granite_brick_wall": "Polished Granite Brick Wall",
+
+  "block.jakemod.polished_andesite_bricks": "Polished Andesite Bricks",
+  "block.jakemod.polished_andesite_brick_stairs": "Polished Andesite Brick Stairs",
+  "block.jakemod.polished_andesite_brick_slab": "Polished Andesite Brick Slab",
+  "block.jakemod.polished_andesite_brick_wall": "Polished Andesite Brick Wall",
+
+  "block.jakemod.polished_diorite_bricks": "Polished Diorite Bricks",
+  "block.jakemod.polished_diorite_brick_stairs": "Polished Diorite Brick Stairs",
+  "block.jakemod.polished_diorite_brick_slab": "Polished Diorite Brick Slab",
+  "block.jakemod.polished_diorite_brick_wall": "Polished Diorite Brick Wall",
+
+  "block.jakemod.polished_tuff_bricks": "Polished Tuff Bricks",
+  "block.jakemod.polished_tuff_brick_stairs": "Polished Tuff Brick Stairs",
+  "block.jakemod.polished_tuff_brick_slab": "Polished Tuff Brick Slab",
+  "block.jakemod.polished_tuff_brick_wall": "Polished Tuff Brick Wall",
+
+  "block.jakemod.compact_amethyst_block": "Compact Block of Amethyst",
+
+  "block.jakemod.copper_door": "Copper Door",
+  "block.jakemod.copper_trapdoor": "Copper Trapdoor",
+  "block.jakemod.copper_button": "Copper Button",
+  "block.jakemod.copper_pressure_plate": "Copper Pressure Plate",
+
+  "block.jakemod.zircon_block": "Block of Zircon",
+  "block.jakemod.zircon_ore": "Zircon Ore",
+  "block.jakemod.deepslate_zircon_ore": "Deepslate Zircon Ore",
+
+  "block.jakemod.polished_tuff": "Polished Tuff",
+  "block.jakemod.polished_tuff_slab": "Polished Tuff Slab",
+  "block.jakemod.polished_tuff_stairs": "Polished Tuff Stairs",
+
+  "block.jakemod.tuff_stairs": "Tuff Stairs",
+  "block.jakemod.tuff_slab": "Tuff Slab",
+  "block.jakemod.tuff_wall": "Tuff Wall",
+
+  "block.jakemod.ruby_block": "Block of Ruby",
+  "block.jakemod.ruby_ore": "Ruby Ore",
+  "block.jakemod.deepslate_ruby_ore": "Deepslate Ruby Ore",
+
+  "block.jakemod.stick_block": "Bundled Stick Block",
+
+  "block.jakemod.snow_bricks": "Snow Bricks",
+  "block.jakemod.snow_brick_stairs": "Snow Brick Stairs",
+  "block.jakemod.snow_brick_slab": "Snow Brick Slab",
+  "block.jakemod.snow_brick_wall": "Snow Brick Wall",
+
+  "itemGroup.jaketab": "The Jake Mod"
+}

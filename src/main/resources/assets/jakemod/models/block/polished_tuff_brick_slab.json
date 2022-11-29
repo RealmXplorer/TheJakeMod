@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "jakemod:block/polished_tuff_bricks",
+    "side": "jakemod:block/polished_tuff_bricks",
+    "top": "jakemod:block/polished_tuff_bricks"
+  }
+}

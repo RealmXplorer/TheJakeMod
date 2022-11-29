@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "ruby",
+  "ingredient": [{
+    "item": "jakemod:ruby_ore"
+  },
+    {
+      "item": "jakemod:deepslate_ruby_ore"
+    }
+
+  ],
+  "result": "jakemod:ruby"
+}

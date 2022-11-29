@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "jakemod:polished_tuff"
+  },
+  "result": "jakemod:polished_tuff_bricks"
+}

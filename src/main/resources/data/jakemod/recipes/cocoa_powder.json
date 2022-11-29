@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "minecraft:cocoa_beans"
+  },
+  {
+    "item": "minecraft:sugar"
+  },
+  {
+    "item": "minecraft:milk_bucket"
+  }
+],
+
+  "result": {
+    "item": "jakemod:cocoa_powder",
+    "count": 4
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "jakemod:polished_diorite_bricks"
+  },
+  "result": "jakemod:polished_diorite_brick_slab"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "chocolate_bar",
+"ingredient":
+  {
+    "item": "jakemod:cocoa_powder"
+  },
+
+  
+  "result": "jakemod:chocolate_bar"
+}

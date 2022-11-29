@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "jakemod:ruby_block"
+  }
+],
+
+  "result": {
+    "item": "jakemod:ruby",
+    "count": 9
+  }
+}
