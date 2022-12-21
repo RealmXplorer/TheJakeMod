@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "jakemod:mint"
+  },
+  {
+    "item": "minecraft:sugar"
+  }
+],
+
+  "result": {
+    "item": "jakemod:candy_cane",
+    "count": 3
+  }
+}

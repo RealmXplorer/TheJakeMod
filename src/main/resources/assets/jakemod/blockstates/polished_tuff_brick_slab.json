@@ -4,7 +4,7 @@
       "model": "jakemod:block/polished_tuff_brick_slab"
     },
     "type=double": {
-      "model": "jakemod:block/polished_brick_tuff"
+      "model": "jakemod:block/polished_tuff_bricks"
     },
     "type=top": {
       "model": "jakemod:block/polished_tuff_brick_slab_top"

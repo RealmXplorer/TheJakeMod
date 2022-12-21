@@ -14,11 +14,14 @@ import java.util.function.Supplier;
 public enum ModArmorMaterials implements ArmorMaterial{
 
 
-    COPPER("copper", 15, new int[]{1, 4, 5, 2}, 19, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
+    COPPER("copper", 15, new int[]{2, 4, 5, 2}, 19, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
         return Ingredient.of(Items.COPPER_INGOT);
     }),
     CROWN("crown", 7, new int[]{1, 3, 5, 2}, 22, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> {
         return Ingredient.of(ModItems.RUBY.get());
+    }),
+    ROSE_GOLD("rose_gold", 7, new int[]{2, 3, 5, 2}, 22, SoundEvents.ARMOR_EQUIP_GOLD, 0.5F, 0.0F, () -> {
+        return Ingredient.of(ModItems.ROSE_GOLD_INGOT.get());
     });
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};

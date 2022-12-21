@@ -2,6 +2,7 @@ package com.jake.jakemod.block;
 
 import com.jake.jakemod.JakeMod;
 import com.jake.jakemod.block.custom.DirectionalBlock;
+import com.jake.jakemod.block.custom.MintCropBlock;
 import com.jake.jakemod.block.custom.StickBlock;
 import com.jake.jakemod.item.ModCreativeModeTab;
 import com.jake.jakemod.item.ModItems;
@@ -119,12 +120,17 @@ public class ModBlocks {
             CreativeModeTab.TAB_BUILDING_BLOCKS);
     //RUBY BLOCK
     public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(5f).requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)),
             CreativeModeTab.TAB_BUILDING_BLOCKS);
 
-
+    //RUBY BLOCK
+    public static final RegistryObject<Block> ROSE_GOLD_BLOCK = registerBlock("rose_gold_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(5f).requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 
     //TUFF STAIRS
@@ -188,13 +194,20 @@ public class ModBlocks {
 
     //STICK BLOCK
     public static final RegistryObject<StickBlock> STICK_BLOCK = registerBlock("stick_block",
-            () -> new StickBlock(BlockBehaviour.Properties.of(Material.STONE).strength(1f)
+            () -> new StickBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1f)
                     .sound(SoundType.SCAFFOLDING)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    //PINE PLANKS?
+    public static final RegistryObject<Block> PINE_PLANKS = registerBlock("pine_planks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(5f)
+                    .sound(SoundType.WOOD)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     //SNOW BRICKS
     public static final RegistryObject<Block> SNOW_BRICKS = registerBlock("snow_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(1f).requiresCorrectToolForDrops()
+                    .strength(.5f).requiresCorrectToolForDrops()
                     .sound(SoundType.SNOW)),
             CreativeModeTab.TAB_BUILDING_BLOCKS);
     //SNOW BRICK STAIRS
@@ -202,17 +215,44 @@ public class ModBlocks {
             () -> new StairBlock(() -> ModBlocks.SNOW_BRICKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE)
                             .sound(SoundType.SNOW)
-                            .strength(1f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                            .strength(.5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
     //SNOW BRICK SLABS
     public static final RegistryObject<Block> SNOW_BRICK_SLAB = registerBlock("snow_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .sound(SoundType.SNOW)
-                    .strength(1f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(.5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
     //SNOW BRICK WALLS
     public static final RegistryObject<Block> SNOW_BRICK_WALL = registerBlock("snow_brick_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(0f).requiresCorrectToolForDrops()
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(.5f).requiresCorrectToolForDrops()
                     .sound(SoundType.SNOW)), CreativeModeTab.TAB_DECORATIONS);
 
+    //MINT CROP
+    public static final RegistryObject<Block> MINT_CROP = BLOCKS.register("mint_crop",
+            () -> new MintCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+
+//CANDY CANE BLOCK
+    public static final RegistryObject<Block> CANDY_CANE_BLOCK = registerBlock("candy_cane_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()
+                    .sound(SoundType.DRIPSTONE_BLOCK)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    //SOUL GLASS
+    public static final RegistryObject<Block> SOUL_GLASS = registerBlock("soul_glass",
+            () -> new GlassBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .noOcclusion()
+                    .strength(.5f)
+                    .sound(SoundType.GLASS)
+                    ),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> SOUL_GLASS_PANE = registerBlock("soul_glass_pane",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(.5f)
+                    .noOcclusion()
+                    .sound(SoundType.GLASS)
+            ),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
     //COPPER BUTTON
     //public static final RegistryObject<Block> COPPER_BUTTON = registerBlock("copper_button",
     //        () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE)

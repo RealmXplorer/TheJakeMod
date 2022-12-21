@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "minecraft:wheat_seeds"
+  }
+],
+
+  "result": {
+    "item": "jakemod:mint_seeds",
+    "count": 1
+  }
+}

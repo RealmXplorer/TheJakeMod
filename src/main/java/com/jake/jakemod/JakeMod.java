@@ -2,6 +2,7 @@ package com.jake.jakemod;
 
 import com.jake.jakemod.block.ModBlocks;
 import com.jake.jakemod.item.ModItems;
+import com.jake.jakemod.loot.ModLootModifiers;
 import com.jake.jakemod.sound.ModSounds;
 import com.jake.jakemod.world.feature.ModConfiguredFeatures;
 import com.jake.jakemod.world.feature.ModPlacedFeatures;
@@ -9,6 +10,7 @@ import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -35,6 +37,8 @@ public class JakeMod
         ModSounds.register(modEventBus);
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::clientSetup);
@@ -45,6 +49,8 @@ public class JakeMod
     private void clientSetup(final FMLClientSetupEvent event) {
         //   ItemBlockRenderTypes.setRenderLayer(ModBlocks.COPPER_DOOR.get(), RenderType.translucent());
     //    ItemBlockRenderTypes.setRenderLayer(ModBlocks.COPPER_TRAPDOOR.get(), RenderType.translucent());
+    ItemBlockRenderTypes.setRenderLayer(ModBlocks.SOUL_GLASS.get(), RenderType.translucent());
+    ItemBlockRenderTypes.setRenderLayer(ModBlocks.SOUL_GLASS_PANE.get(), RenderType.translucent());
 
     }
     private void commonSetup(final FMLCommonSetupEvent event)

@@ -7,7 +7,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab JAKE_TAB = new CreativeModeTab("jaketab") {
         @Override
         public ItemStack makeIcon(){
-            return new ItemStack(ModItems.ZIRCON.get());
+            return new ItemStack(ModItems.RUBY.get());
         }
     };
 

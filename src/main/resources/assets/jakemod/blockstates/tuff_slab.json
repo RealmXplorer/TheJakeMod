@@ -4,7 +4,7 @@
       "model": "jakemod:block/tuff_slab"
     },
     "type=double": {
-      "model": "jakemod:block/tuff"
+      "model": "minecraft:block/tuff"
     },
     "type=top": {
       "model": "jakemod:block/tuff_slab_top"

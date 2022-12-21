@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "jakemod:rose_gold_ingot"
+  },
+  "base": {
+    "item": "jakemod:copper_hoe"
+  },
+  "result": {
+    "item": "jakemod:rose_gold_hoe"
+  }
+}

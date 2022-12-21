@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "glass",
+"ingredient":
+  {
+    "item": "minecraft:soul_sand"
+  },
+
+  
+  "result": "jakemod:soul_glass"
+}

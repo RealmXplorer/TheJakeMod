@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "jakemod:block/zircon_ore"
-  }
-}

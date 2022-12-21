@@ -1,8 +1,7 @@
 {
-  "item.jakemod.zircon": "Zircon",
-  "item.jakemod.raw_zircon": "Raw Zircon",
-
   "item.jakemod.copper_nugget": "Copper Nugget",
+
+  "item.jakemod.rose_gold_ingot": "Rose Gold Ingot",
 
   "item.jakemod.copper_sword": "Copper Sword",
   "item.jakemod.copper_pickaxe": "Copper Pickaxe",
@@ -10,12 +9,31 @@
   "item.jakemod.copper_shovel": "Copper Shovel",
   "item.jakemod.copper_hoe": "Copper Hoe",
 
+  "item.jakemod.rose_gold_sword": "Rose Gold Sword",
+  "item.jakemod.rose_gold_pickaxe": "Rose Gold Pickaxe",
+  "item.jakemod.rose_gold_axe": "Rose Gold Axe",
+  "item.jakemod.rose_gold_shovel": "Rose Gold Shovel",
+  "item.jakemod.rose_gold_hoe": "Rose Gold Hoe",
+
   "item.jakemod.copper_helmet": "Copper Helmet",
   "item.jakemod.copper_chestplate": "Copper Chestplate",
   "item.jakemod.copper_leggings": "Copper Leggings",
   "item.jakemod.copper_boots": "Copper Boots",
 
+  "item.jakemod.rose_gold_helmet": "Rose Gold Helmet",
+  "item.jakemod.rose_gold_chestplate": "Rose Gold Chestplate",
+  "item.jakemod.rose_gold_leggings": "Rose Gold Leggings",
+  "item.jakemod.rose_gold_boots": "Rose Gold Boots",
+
   "item.jakemod.amethyst_sword": "Amethyst Sword",
+
+  "item.jakemod.star_shard": "Star Shard",
+
+  "item.jakemod.star_blade": "The Star Blade",
+  "item.jakemod.star_pickaxe": "Star Pickaxe",
+  "item.jakemod.star_axe": "Star Axe",
+  "item.jakemod.star_shovel": "Star Shovel",
+  "item.jakemod.star_hoe": "Star Hoe",
 
   "item.jakemod.granite_sword": "Granite Sword",
   "item.jakemod.granite_pickaxe": "Granite Pickaxe",
@@ -25,6 +43,15 @@
 
   "item.jakemod.cocoa_powder": "Cocoa Powder",
   "item.jakemod.chocolate_bar": "Chocolate Bar",
+
+  "item.jakemod.candy_cane": "Candy Cane",
+
+  "item.jakemod.mint": "Mint",
+  "item.jakemod.mint_seeds": "Mint Seeds",
+
+
+  "item.jakemod.glass_shard": "Glass Shard",
+
 
   "item.jakemod.ruby": "Ruby",
 
@@ -50,16 +77,23 @@
   "block.jakemod.polished_tuff_brick_slab": "Polished Tuff Brick Slab",
   "block.jakemod.polished_tuff_brick_wall": "Polished Tuff Brick Wall",
 
+
+  "block.jakemod.pine_planks": "Pine Planks",
+
+  "block.jakemod.soul_glass": "Soul Glass",
+  "block.jakemod.soul_glass_pane": "Soul Glass Pane",
+
   "block.jakemod.compact_amethyst_block": "Compact Block of Amethyst",
+
+  "block.jakemod.candy_cane_block": "Candy Cane Block",
+
+  "block.jakemod.rose_gold_block": "Block of Rose Gold",
 
   "block.jakemod.copper_door": "Copper Door",
   "block.jakemod.copper_trapdoor": "Copper Trapdoor",
   "block.jakemod.copper_button": "Copper Button",
   "block.jakemod.copper_pressure_plate": "Copper Pressure Plate",
 
-  "block.jakemod.zircon_block": "Block of Zircon",
-  "block.jakemod.zircon_ore": "Zircon Ore",
-  "block.jakemod.deepslate_zircon_ore": "Deepslate Zircon Ore",
 
   "block.jakemod.polished_tuff": "Polished Tuff",
   "block.jakemod.polished_tuff_slab": "Polished Tuff Slab",
@@ -72,6 +106,8 @@
   "block.jakemod.ruby_block": "Block of Ruby",
   "block.jakemod.ruby_ore": "Ruby Ore",
   "block.jakemod.deepslate_ruby_ore": "Deepslate Ruby Ore",
+
+  "block.jakemod.mint_crop": "Mint Crop",
 
   "block.jakemod.stick_block": "Bundled Stick Block",
 

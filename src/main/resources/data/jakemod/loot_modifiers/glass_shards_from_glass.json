@@ -1,0 +1,21 @@
+
+{
+  "type": "jakemod:add_item",
+  "conditions": [
+    {
+      "condition": "block_state_property",
+      "block": "minecraft:glass"
+    }
+  ],
+  "item": "jakemod:glass_shard",
+    "functions": [
+      {
+        "count": {
+          "type": "minecraft:set_count",
+          "max": 5.0,
+          "min": 2.0
+        }
+      }
+    ],
+    "rolls": 1
+  }

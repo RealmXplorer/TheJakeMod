@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "minecraft:amethyst_shard"
+  },
+  {
+    "item": "minecraft:echo_shard"
+  },
+  {
+    "item": "minecraft:nether_star"
+  }
+],
+
+  "result": {
+    "item": "jakemod:star_shard",
+    "count": 3
+  }
+}
