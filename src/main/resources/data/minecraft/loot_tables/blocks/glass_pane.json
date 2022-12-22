@@ -24,26 +24,20 @@
                   }
                 }
               ],
-              "name": "jakemod:deepslate_ruby_ore"
+              "name": "minecraft:glass_pane"
             },
             {
               "type": "minecraft:item",
               "functions": [
                 {
-                  "add": false,
                   "count": 1,
                   "function": "minecraft:set_count"
-                },
-                {
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
                 },
                 {
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "jakemod:ruby"
+              "name": "jakemod:glass_shard"
             }
           ]
         }

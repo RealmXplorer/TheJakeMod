@@ -1,21 +1,11 @@
 
 {
-  "type": "jakemod:add_item",
+  "type": "jakemod:glass_pane_shard",
   "conditions": [
     {
       "condition": "block_state_property",
       "block": "minecraft:glass_pane"
     }
   ],
-  "item": "jakemod:glass_shard",
-  "functions": [
-    {
-      "count": {
-        "type": "minecraft:set_count",
-        "max": 5.0,
-        "min": 2.0
-      }
-    }
-  ],
-  "rolls": 1
+  "item": "jakemod:glass_shard"
 }

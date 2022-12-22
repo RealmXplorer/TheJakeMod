@@ -2,6 +2,7 @@ package com.jake.jakemod.item;
 
 import com.jake.jakemod.JakeMod;
 import com.jake.jakemod.block.ModBlocks;
+import com.jake.jakemod.item.custom.BrimstoneItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,9 +18,14 @@ public class ModItems {
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
+    public static final RegistryObject<Item> BRIMSTONE = ITEMS.register("brimstone",
+            () -> new BrimstoneItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
     public static final RegistryObject<Item> ROSE_GOLD_INGOT = ITEMS.register("rose_gold_ingot",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
+    public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
     public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
@@ -85,6 +91,17 @@ public class ModItems {
     public static final RegistryObject<Item> ROSE_GOLD_HOE = ITEMS.register("rose_gold_hoe",
             () -> new HoeItem(ModTiers.ROSE_GOLD, -1, -2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
+    //STEEL TOOLS
+    public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword",
+            () -> new SwordItem(ModTiers.STEEL, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe",
+            () -> new PickaxeItem(ModTiers.STEEL, 1, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+    public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe",
+            () -> new AxeItem(ModTiers.ROSE_GOLD, 7, -3.2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+    public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel",
+            () -> new ShovelItem(ModTiers.ROSE_GOLD, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+    public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe",
+            () -> new HoeItem(ModTiers.ROSE_GOLD, -1, -2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
     //COPPER ARMOR
     public static final RegistryObject<Item> COPPER_HELMET = ITEMS.register("copper_helmet",
@@ -105,6 +122,16 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<Item> ROSE_GOLD_BOOTS = ITEMS.register("rose_gold_boots",
             () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
+    //STEEL ARMOR
+    public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet",
+            () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> STEEL_CHESTPLATE = ITEMS.register("steel_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> STEEL_LEGGINGS = ITEMS.register("steel_leggings",
+            () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> STEEL_BOOTS = ITEMS.register("steel_boots",
+            () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
     //CROWN
     public static final RegistryObject<Item> CROWN = ITEMS.register("crown",

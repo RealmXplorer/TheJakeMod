@@ -3,6 +3,10 @@
 
   "item.jakemod.rose_gold_ingot": "Rose Gold Ingot",
 
+  "item.jakemod.steel_ingot": "Steel Ingot",
+
+  "item.jakemod.brimstone": "Brimstone",
+
   "item.jakemod.copper_sword": "Copper Sword",
   "item.jakemod.copper_pickaxe": "Copper Pickaxe",
   "item.jakemod.copper_axe": "Copper Axe",
@@ -15,6 +19,12 @@
   "item.jakemod.rose_gold_shovel": "Rose Gold Shovel",
   "item.jakemod.rose_gold_hoe": "Rose Gold Hoe",
 
+  "item.jakemod.steel_sword": "Steel Sword",
+  "item.jakemod.steel_pickaxe": "Steel Pickaxe",
+  "item.jakemod.steel_axe": "Steel Axe",
+  "item.jakemod.steel_shovel": "Steel Shovel",
+  "item.jakemod.steel_hoe": "Steel Hoe",
+
   "item.jakemod.copper_helmet": "Copper Helmet",
   "item.jakemod.copper_chestplate": "Copper Chestplate",
   "item.jakemod.copper_leggings": "Copper Leggings",
@@ -24,6 +34,11 @@
   "item.jakemod.rose_gold_chestplate": "Rose Gold Chestplate",
   "item.jakemod.rose_gold_leggings": "Rose Gold Leggings",
   "item.jakemod.rose_gold_boots": "Rose Gold Boots",
+
+  "item.jakemod.steel_helmet": "Steel Helmet",
+  "item.jakemod.steel_chestplate": "Steel Chestplate",
+  "item.jakemod.steel_leggings": "Steel Leggings",
+  "item.jakemod.steel_boots": "Steel Boots",
 
   "item.jakemod.amethyst_sword": "Amethyst Sword",
 
@@ -57,6 +72,21 @@
 
   "item.jakemod.crown": "Crown",
 
+  "item.minecraft.potion.effect.blindness_potion": "Blindness Potion",
+  "item.minecraft.splash_potion.effect.blindness_potion": "Splash Potion of Blindness",
+  "item.minecraft.lingering_potion.effect.blindness_potion": "Lingering Potion of Blindness",
+  "item.minecraft.tipped_arrow.effect.blindness_potion": "Arrow of Blindness",
+
+  "item.minecraft.potion.effect.glowing_potion": "Glowing Potion",
+  "item.minecraft.splash_potion.effect.glowing_potion": "Splash Potion of Glowing",
+  "item.minecraft.lingering_potion.effect.glowing_potion": "Lingering Potion of Glowing",
+  "item.minecraft.tipped_arrow.effect.glowing_potion": "Arrow of Glowing",
+
+  "item.minecraft.potion.effect.levitation_potion": "Levitation Potion",
+  "item.minecraft.splash_potion.effect.levitation_potion": "Splash Potion of Levitation",
+  "item.minecraft.lingering_potion.effect.levitation_potion": "Lingering Potion of Levitation",
+  "item.minecraft.tipped_arrow.effect.levitation_potion": "Arrow of Levitation",
+
   "block.jakemod.polished_granite_bricks": "Polished Granite Bricks",
   "block.jakemod.polished_granite_brick_stairs": "Polished Granite Brick Stairs",
   "block.jakemod.polished_granite_brick_slab": "Polished Granite Brick Slab",
@@ -84,6 +114,10 @@
   "block.jakemod.soul_glass_pane": "Soul Glass Pane",
 
   "block.jakemod.compact_amethyst_block": "Compact Block of Amethyst",
+
+  "block.jakemod.steel_block": "Block of Steel",
+
+  "block.jakemod.brimstone_block": "Block of Brimstone",
 
   "block.jakemod.candy_cane_block": "Candy Cane Block",
 

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "jakemod:steel_ingot"
+    }
+  },
+  "pattern": [
+    "XX ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "jakemod:steel_hoe"
+  }
+}

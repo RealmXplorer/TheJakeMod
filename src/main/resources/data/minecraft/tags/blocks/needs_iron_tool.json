@@ -21,6 +21,7 @@
     "jakemod:ruby_block",
     "jakemod:ruby_ore",
     "jakemod:deepslate_ruby_ore",
-    "jakemod:rose_gold_block"
+    "jakemod:rose_gold_block",
+    "jakemod:steel_block"
   ]
 }

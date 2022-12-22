@@ -1,6 +1,7 @@
 package com.jake.jakemod.block;
 
 import com.jake.jakemod.JakeMod;
+import com.jake.jakemod.block.custom.BrimstoneBlock;
 import com.jake.jakemod.block.custom.DirectionalBlock;
 import com.jake.jakemod.block.custom.MintCropBlock;
 import com.jake.jakemod.block.custom.StickBlock;
@@ -83,6 +84,18 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST)
                     .strength(6f).requiresCorrectToolForDrops()
                     .sound(SoundType.AMETHYST)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    //STEEL BLOCK
+    public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6f).requiresCorrectToolForDrops()
+                    .sound(SoundType.NETHERITE_BLOCK)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    //STEEL BLOCK
+    public static final RegistryObject<Block> BRIMSTONE_BLOCK = registerBlock("brimstone_block",
+            () -> new BrimstoneBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()
+                    .sound(SoundType.BASALT)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 
     //ZIRCON BLOCK

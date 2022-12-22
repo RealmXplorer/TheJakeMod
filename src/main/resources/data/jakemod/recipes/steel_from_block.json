@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "jakemod:steel_block"
+  }
+],
+
+  "result": {
+    "item": "jakemod:steel_ingot",
+    "count": 9
+  }
+}

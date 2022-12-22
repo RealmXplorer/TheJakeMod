@@ -1,5 +1,5 @@
 {
-  "replace": true,
+  "replace": false,
   "entries": [
     "jakemod:mint_seeds_from_grass",
     "jakemod:glass_shards_from_glass",

@@ -19,6 +19,9 @@ public class ModTiers {
             1.5f,15, BlockTags.NEEDS_STONE_TOOL,
             () -> Ingredient.of(ModItems.ROSE_GOLD_INGOT.get()));
 
+    public static final ForgeTier STEEL = new ForgeTier(2,560,6.5f,
+            2.5f,12, BlockTags.NEEDS_IRON_TOOL,
+            () -> Ingredient.of(ModItems.STEEL_INGOT.get()));
 
     public static final ForgeTier GRANITE = new ForgeTier(1, 131, 4.0F,
             1.0F, 5, BlockTags.NEEDS_STONE_TOOL,
