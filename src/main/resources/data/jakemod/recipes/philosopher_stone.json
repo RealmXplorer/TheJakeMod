@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "g": {
+      "item": "minecraft:gold_ingot"
+    },
+    "r": {
+      "item": "jakemod:ruby"
+    },
+    "a": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "pattern": [
+    "gag",
+    "ara",
+    "gag"
+  ],
+  "result": {
+    "item": "jakemod:philosopher_stone"
+  }
+}

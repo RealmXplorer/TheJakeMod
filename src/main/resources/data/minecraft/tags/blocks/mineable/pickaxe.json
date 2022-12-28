@@ -415,6 +415,15 @@
 
     "jakemod:charcoal_block",
     "jakemod:rose_quartz_block",
-    "jakemod:hellsteel_block"
+    "jakemod:hellsteel_block",
+    "jakemod:nether_coal_ore",
+
+    "jakemod:stone_tiles",
+    "jakemod:stone_tile_slab",
+    "jakemod:stone_tile_stairs",
+    "jakemod:stone_tile_wall",
+    "jakemod:steel_door",
+    "jakemod:steel_trapdoor",
+    "jakemod:steel_bars"
   ]
 }

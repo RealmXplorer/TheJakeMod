@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X#X",
+    "#X#",
+    "X#X"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:gunpowder"
+    },
+    "#": {
+      "item": "minecraft:soul_sand"
+    }
+  },
+  "result": {
+    "item": "jakemod:soul_tnt"
+  }
+}

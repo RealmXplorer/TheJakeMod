@@ -2,6 +2,7 @@ package com.jake.jakemod.block;
 
 import com.jake.jakemod.JakeMod;
 //import com.jake.jakemod.block.custom.KilnBlock;
+import com.jake.jakemod.block.custom.SoulTntBlock;
 import com.jake.jakemod.item.custom.BrimstoneBlock;
 import com.jake.jakemod.block.custom.MintCropBlock;
 import com.jake.jakemod.block.custom.StickBlock;
@@ -83,18 +84,33 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SANDSTONE_BRICKS = registerBlock("sandstone_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(.5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
-    //POLISHED DIORITE BRICK STAIRS
+    //SANDSTONE BRICK STAIRS
     public static final RegistryObject<Block> SANDSTONE_BRICK_STAIRS = registerBlock("sandstone_brick_stairs",
             () -> new StairBlock(() -> ModBlocks.SANDSTONE_BRICKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
-    //POLISHED DIORITE BRICK SLABS
+    //SANDSTONE BRICK SLABS
     public static final RegistryObject<Block> SANDSTONE_BRICK_SLAB = registerBlock("sandstone_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
-    //POLISHED DIORITE BRICK WALLS
+    //SANDSTONE BRICK WALLS
     public static final RegistryObject<Block> SANDSTONE_BRICK_WALL = registerBlock("sandstone_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
 
+
+    //STONE TILES
+    public static final RegistryObject<Block> STONE_TILES = registerBlock("stone_tiles",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //STONE TILE STAIRS
+    public static final RegistryObject<Block> STONE_TILE_STAIRS = registerBlock("stone_tile_stairs",
+            () -> new StairBlock(() -> ModBlocks.STONE_TILES.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //STONE TILE SLABS
+    public static final RegistryObject<Block> STONE_TILE_SLAB = registerBlock("stone_tile_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //STONE TILE WALLS
+    public static final RegistryObject<Block> STONE_TILE_WALL = registerBlock("stone_tile_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
 
 
     //COMPACT AMETHYST BLOCK
@@ -169,6 +185,15 @@ public class ModBlocks {
                     .strength(4f).requiresCorrectToolForDrops(),
                     UniformInt.of(3,7)),
             CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> NETHER_COAL_ORE = registerBlock("nether_coal_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.NETHER_GOLD_ORE),
+                    UniformInt.of(3,7)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+
     //DEEPSLATE RUBY ORE
     public static final RegistryObject<Block> DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
@@ -510,6 +535,32 @@ public class ModBlocks {
     //        () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.STONE)
     //                .strength(2f).requiresCorrectToolForDrops()
     //                .noOcclusion()), CreativeModeTab.TAB_REDSTONE);
+
+    //STEEL DOOR
+    public static final RegistryObject<Block> STEEL_DOOR = registerBlock("steel_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(8f).requiresCorrectToolForDrops()
+                   .noOcclusion().sound(SoundType.NETHERITE_BLOCK)), CreativeModeTab.TAB_REDSTONE);
+    //STEEL TRAPDOOR
+    public static final RegistryObject<Block> STEEL_TRAPDOOR = registerBlock("steel_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(8f).requiresCorrectToolForDrops()
+                    .noOcclusion().sound(SoundType.NETHERITE_BLOCK)), CreativeModeTab.TAB_REDSTONE);
+    //STEEL BARS
+    public static final RegistryObject<Block> STEEL_BARS = registerBlock("steel_bars",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(8f).requiresCorrectToolForDrops()
+                    .noOcclusion().sound(SoundType.NETHERITE_BLOCK)), CreativeModeTab.TAB_DECORATIONS);
+
+    public static final RegistryObject<Block> SOUL_TNT = registerBlock("soul_tnt",
+            () -> new SoulTntBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(1f)
+                    .noOcclusion().sound(SoundType.SOUL_SAND)), CreativeModeTab.TAB_REDSTONE);
+
+    //public static final RegistryObject<Block> BLACKSTONE_CUTTER = registerBlock("blackstone_cutter",
+      //      () -> new StonecutterBlock(BlockBehaviour.Properties.of(Material.STONE)
+        //            .strength(1f)
+          //          .noOcclusion().sound(SoundType.STONE)), CreativeModeTab.TAB_DECORATIONS);
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block,
                                                                     CreativeModeTab tab) {

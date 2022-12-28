@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "jakemod:stone_tiles"
+  },
+  "result": "jakemod:stone_tile_stairs"
+}

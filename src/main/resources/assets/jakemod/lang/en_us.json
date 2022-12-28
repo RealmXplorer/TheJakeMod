@@ -1,6 +1,9 @@
 {
-  "item.jakemod.dog_music_disc": "Music Disc",
-  "item.jakemod.dog_music_disc.desc": "C418 - dog",
+  "item.jakemod.music_disc_dog": "Music Disc",
+  "item.jakemod.music_disc_dog.desc": "C418 - dog",
+
+  "item.jakemod.music_disc_kingstead": "Music Disc",
+  "item.jakemod.music_disc_kingstead.desc": "i2o2 - Kingstead",
 
   "item.jakemod.copper_nugget": "Copper Nugget",
 
@@ -9,6 +12,8 @@
   "item.jakemod.steel_ingot": "Steel Ingot",
 
   "item.jakemod.hellsteel_ingot": "Hellsteel Ingot",
+
+  "item.jakemod.philosopher_stone": "Philosopher's Stone",
 
   "item.jakemod.warped_paper": "Warped Paper",
   "item.jakemod.warped_book": "Warped Book",
@@ -40,6 +45,11 @@
   "item.jakemod.hellsteel_axe": "Hellsteel Axe",
   "item.jakemod.hellsteel_shovel": "Hellsteel Shovel",
   "item.jakemod.hellsteel_hoe": "Hellsteel Hoe",
+
+
+  "item.jakemod.gold_shears": "Golden Shears",
+  "item.jakemod.diamond_shears": "Diamond-tipped Shears",
+  "item.jakemod.netherite_shears": "Netherite Shears",
 
   "item.jakemod.copper_helmet": "Copper Helmet",
   "item.jakemod.copper_chestplate": "Copper Chestplate",
@@ -172,11 +182,16 @@
 
   "block.jakemod.rose_gold_block": "Block of Rose Gold",
 
+  "block.jakemod.soul_tnt": "Soul TNT",
+
   "block.jakemod.copper_door": "Copper Door",
   "block.jakemod.copper_trapdoor": "Copper Trapdoor",
   "block.jakemod.copper_button": "Copper Button",
   "block.jakemod.copper_pressure_plate": "Copper Pressure Plate",
 
+  "block.jakemod.steel_door": "Steel Door",
+  "block.jakemod.steel_trapdoor": "Steel Trapdoor",
+  "block.jakemod.steel_bars": "Steel Bars",
 
   "block.jakemod.sandstone_bricks": "Sandstone Bricks",
   "block.jakemod.sandstone_brick_slab": "Sandstone Brick Slab",
@@ -236,12 +251,19 @@
 
   "block.jakemod.mint_crop": "Mint Crop",
 
+  "block.jakemod.nether_coal_ore": "Nether Coal Ore",
+
   "block.jakemod.stick_block": "Bundled Stick Block",
 
   "block.jakemod.snow_bricks": "Snow Bricks",
   "block.jakemod.snow_brick_stairs": "Snow Brick Stairs",
   "block.jakemod.snow_brick_slab": "Snow Brick Slab",
   "block.jakemod.snow_brick_wall": "Snow Brick Wall",
+
+  "block.jakemod.stone_tiles": "Stone Tiles",
+  "block.jakemod.stone_tile_stairs": "Stone Tile Stairs",
+  "block.jakemod.stone_tile_slab": "Stone Tile Slab",
+  "block.jakemod.stone_tile_wall": "Stone Tile Wall",
 
   "itemGroup.jaketab": "The Jake Mod"
 }

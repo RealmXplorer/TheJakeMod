@@ -22,6 +22,9 @@
     "jakemod:rose_gold_block",
     "jakemod:steel_block",
     "jakemod:hellsteel_block",
-    "jakemod:rose_quartz_block"
+    "jakemod:rose_quartz_block",
+    "jakemod:steel_door",
+    "jakemod:steel_trapdoor",
+    "jakemod:steel_bars"
   ]
 }

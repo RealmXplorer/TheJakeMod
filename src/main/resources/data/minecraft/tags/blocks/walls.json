@@ -35,6 +35,7 @@
     "jakemod:smooth_basalt_wall",
     "jakemod:polished_dripstone_brick_wall",
     "jakemod:dripstone_wall",
-    "jakemod:basalt_brick_wall"
+    "jakemod:basalt_brick_wall",
+    "jakemod:stone_tile_wall"
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "g": {
+      "item": "minecraft:golden_apple"
+    },
+    "s": {
+      "item": "jakemod:philosopher_stone"
+    },
+    "e": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "pattern": [
+    "G G",
+    "ese",
+    "GgG"
+  ],
+  "result": {
+    "item": "minecraft:totem_of_undying"
+  }
+}

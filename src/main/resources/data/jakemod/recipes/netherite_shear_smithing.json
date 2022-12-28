@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "jakemod:diamond_shears"
+  },
+  "result": {
+    "item": "jakemod:netherite_shears"
+  }
+}

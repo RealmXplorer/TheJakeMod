@@ -1,3 +1,4 @@
 {
-  "parent": "jakemod:block/soul_glass"
+  "parent": "jakemod:block/soul_glass",
+  "render_type": "translucent"
 }

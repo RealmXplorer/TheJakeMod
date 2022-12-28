@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/template_glass_pane_side",
+  "render_type": "translucent",
   "textures": {
     "edge": "jakemod:block/soul_glass_pane_top",
     "pane": "jakemod:block/soul_glass"

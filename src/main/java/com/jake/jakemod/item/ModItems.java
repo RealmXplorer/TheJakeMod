@@ -2,9 +2,7 @@ package com.jake.jakemod.item;
 
 import com.jake.jakemod.JakeMod;
 import com.jake.jakemod.block.ModBlocks;
-import com.jake.jakemod.item.custom.BrimstoneItem;
-import com.jake.jakemod.item.custom.GildedArmorItem;
-import com.jake.jakemod.item.custom.RoseGoldItem;
+import com.jake.jakemod.item.custom.*;
 import com.jake.jakemod.sound.ModSounds;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
@@ -25,8 +23,11 @@ public class ModItems {
     public static final RegistryObject<Item> WARPED_PAPER = ITEMS.register("warped_paper",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
+    public static final RegistryObject<Item> PHILOSOPHER_STONE = ITEMS.register("philosopher_stone",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1).rarity(Rarity.RARE)));
+
     public static final RegistryObject<Item> WARPED_BOOK = ITEMS.register("warped_book",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new BookItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
     public static final RegistryObject<Item> BRIMSTONE = ITEMS.register("brimstone",
             () -> new BrimstoneItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
@@ -80,6 +81,9 @@ public class ModItems {
             () -> new ShovelItem(ModTiers.GRANITE, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<Item> GRANITE_HOE = ITEMS.register("granite_hoe",
             () -> new HoeItem(ModTiers.GRANITE, -1, -2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+
+    //public static final RegistryObject<Item> DIAMOND_SHIELD = ITEMS.register("diamond_shield",
+      //      () -> new DiamondShieldItem(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
     //GILDED BLACKSTONE TOOLS\
     public static final RegistryObject<Item> GILDED_BLACKSTONE_SWORD = ITEMS.register("gilded_blackstone_sword",
@@ -228,6 +232,16 @@ public class ModItems {
     public static final RegistryObject<Item> MINT = ITEMS.register("mint",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
+    public static final RegistryObject<Item> GOLD_SHEARS = ITEMS.register("gold_shears",
+            () -> new GoldenShearsItem(new Item.Properties().durability(120).tab(CreativeModeTab.TAB_TOOLS)));
+
+    public static final RegistryObject<Item> DIAMOND_SHEARS = ITEMS.register("diamond_shears",
+            () -> new DiamondShearsItem(new Item.Properties().durability(480).tab(CreativeModeTab.TAB_TOOLS)));
+
+    public static final RegistryObject<Item> NETHERITE_SHEARS = ITEMS.register("netherite_shears",
+            () -> new NetheriteShearsItem(new Item.Properties().durability(560).tab(CreativeModeTab.TAB_TOOLS)));
+
+
     public static final RegistryObject<Item> STAR_BLADE = ITEMS.register("star_blade",
             () -> new SwordItem(ModTiers.STAR, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<Item> STAR_PICKAXE = ITEMS.register("star_pickaxe",
@@ -244,8 +258,11 @@ public class ModItems {
             () -> new HoeItem(ModTiers.STAR, -1, -2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
 
-    public static final RegistryObject<Item> DOG_MUSIC_DISC = ITEMS.register("dog_music_disc",
-            () -> new RecordItem(4, ModSounds.DOG_MUSIC_DISC, new Item.Properties().tab(CreativeModeTab.TAB_MISC).rarity(Rarity.RARE).stacksTo(1),2920));
+    public static final RegistryObject<Item> MUSIC_DISC_DOG = ITEMS.register("music_disc_dog",
+            () -> new RecordItem(4, ModSounds.MUSIC_DISC_DOG, new Item.Properties().tab(CreativeModeTab.TAB_MISC).rarity(Rarity.RARE).stacksTo(1),2920));
+
+    public static final RegistryObject<Item> MUSIC_DISC_KINGSTEAD = ITEMS.register("music_disc_kingstead",
+            () -> new RecordItem(4, ModSounds.MUSIC_DISC_KINGSTEAD, new Item.Properties().tab(CreativeModeTab.TAB_MISC).rarity(Rarity.RARE).stacksTo(1),3820));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

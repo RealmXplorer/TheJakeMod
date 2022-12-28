@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "jakemod:philosopher_stone"
+  },
+  "base": {
+    "item": "minecraft:copper_block"
+  },
+  "result": {
+    "item": "minecraft:gold_block"
+  }
+}

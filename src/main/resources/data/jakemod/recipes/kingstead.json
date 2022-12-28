@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#@#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "@": {
+      "item": "jakemod:crown"
+    }
+  },
+  "result": {
+    "item": "jakemod:music_disc_kingstead"
+  }
+}

@@ -1,8 +1,25 @@
 {
-  "dog_music_disc": {
+  "music_disc_dog": {
     "sounds": [
       {
-       "name": "jakemod:dog_music_disc",
+       "name": "jakemod:music_disc_dog",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_kingstead": {
+    "sounds": [
+      {
+        "name": "jakemod:music_disc_kingstead",
+        "stream": true
+      }
+    ]
+  },
+  "soul_glass_break": {
+    "subtitle": "sounds.jakemod.soul_glass_break",
+    "sounds": [
+      {
+        "name": "jakemod:soul_glass_break",
         "stream": true
       }
     ]

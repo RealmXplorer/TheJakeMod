@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
-  "render-type": "translucent",
+  "render_type": "translucent",
   "textures": {
     "all": "jakemod:block/soul_glass"
   }
