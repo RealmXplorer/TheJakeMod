@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "jakemod:polished_calcite_bricks"
+  },
+  "result": "jakemod:polished_calcite_brick_slab"
+}

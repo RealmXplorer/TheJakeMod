@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:magma_cream"
+  },
+  "base": {
+    "item": "minecraft:gilded_blackstone"
+  },
+  "result": {
+    "item": "jakemod:hellsteel_ingot"
+  }
+}

@@ -5,8 +5,8 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.function.Supplier;
@@ -17,15 +17,39 @@ public enum ModArmorMaterials implements ArmorMaterial{
     COPPER("copper", 15, new int[]{2, 4, 5, 2}, 19, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
         return Ingredient.of(Items.COPPER_INGOT);
     }),
+
+    GILDED_BLACKSTONE("gilded_blackstone",15, new int[]{2, 5, 5, 2}, 9, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> {
+        return Ingredient.of(Items.GILDED_BLACKSTONE);
+    }),
+
+    ROSE_QUARTZ("rose_quartz", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
+        return Ingredient.of(ModItems.ROSE_QUARTZ.get());
+    }),
     CROWN("crown", 7, new int[]{1, 3, 5, 2}, 22, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> {
         return Ingredient.of(ModItems.RUBY.get());
     }),
     STEEL("steel", 20, new int[]{3, 5, 6, 3}, 9, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.25F, 0.05F, () -> {
         return Ingredient.of(ModItems.STEEL_INGOT.get());
     }),
-    ROSE_GOLD("rose_gold", 7, new int[]{2, 3, 5, 2}, 22, SoundEvents.ARMOR_EQUIP_GOLD, 0.5F, 0.0F, () -> {
+
+    HELLSTEEL("hellsteel", 20, new int[]{3, 5, 6, 3}, 9, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.25F, 0.05F, () -> {
+        return Ingredient.of(ModItems.HELLSTEEL_INGOT.get());
+    }),
+
+    ROSE_GOLD("rose_gold", 13, new int[]{2, 5, 5, 2}, 23, SoundEvents.ARMOR_EQUIP_GOLD, 0.5F, 0.0F, () -> {
         return Ingredient.of(ModItems.ROSE_GOLD_INGOT.get());
     });
+
+    public static boolean isWearingGold(LivingEntity p_234460_0_) {
+        for(ItemStack itemstack : p_234460_0_.getArmorSlots()) {
+            Item item = itemstack.getItem();
+            if (itemstack.makesPiglinsNeutral(p_234460_0_)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;

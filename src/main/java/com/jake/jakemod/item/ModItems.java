@@ -3,11 +3,15 @@ package com.jake.jakemod.item;
 import com.jake.jakemod.JakeMod;
 import com.jake.jakemod.block.ModBlocks;
 import com.jake.jakemod.item.custom.BrimstoneItem;
+import com.jake.jakemod.item.custom.GildedArmorItem;
+import com.jake.jakemod.item.custom.RoseGoldItem;
+import com.jake.jakemod.sound.ModSounds;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegisterEvent;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
@@ -18,13 +22,25 @@ public class ModItems {
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
+    public static final RegistryObject<Item> WARPED_PAPER = ITEMS.register("warped_paper",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
+    public static final RegistryObject<Item> WARPED_BOOK = ITEMS.register("warped_book",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
     public static final RegistryObject<Item> BRIMSTONE = ITEMS.register("brimstone",
             () -> new BrimstoneItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
     public static final RegistryObject<Item> ROSE_GOLD_INGOT = ITEMS.register("rose_gold_ingot",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
+    public static final RegistryObject<Item> ROSE_QUARTZ = ITEMS.register("rose_quartz",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
     public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
+    public static final RegistryObject<Item> HELLSTEEL_INGOT = ITEMS.register("hellsteel_ingot",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
     public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget",
@@ -46,6 +62,9 @@ public class ModItems {
     public static final RegistryObject<Item> CANDY_CANE= ITEMS.register("candy_cane",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.CANDY_CANE)));
 
+    public static final RegistryObject<Item> GHAST_BERRY= ITEMS.register("ghast_berry",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.GHAST_BERRY)));
+
     public static final RegistryObject<Item> AMETHYST_SWORD = ITEMS.register("amethyst_sword",
             () -> new SwordItem(ModTiers.AMETHYST, 2, 3f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)
                     .defaultDurability(3)));
@@ -62,8 +81,32 @@ public class ModItems {
     public static final RegistryObject<Item> GRANITE_HOE = ITEMS.register("granite_hoe",
             () -> new HoeItem(ModTiers.GRANITE, -1, -2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
+    //GILDED BLACKSTONE TOOLS\
+    public static final RegistryObject<Item> GILDED_BLACKSTONE_SWORD = ITEMS.register("gilded_blackstone_sword",
+            () -> new SwordItem(ModTiers.GILDED_BLACKSTONE, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> GILDED_BLACKSTONE_PICKAXE = ITEMS.register("gilded_blackstone_pickaxe",
+            () -> new PickaxeItem(ModTiers.GILDED_BLACKSTONE, 1, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+    public static final RegistryObject<Item> GILDED_BLACKSTONE_AXE = ITEMS.register("gilded_blackstone_axe",
+            () -> new AxeItem(ModTiers.GILDED_BLACKSTONE, 7, -3.2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+    public static final RegistryObject<Item> GILDED_BLACKSTONE_SHOVEL = ITEMS.register("gilded_blackstone_shovel",
+            () -> new ShovelItem(ModTiers.GILDED_BLACKSTONE, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+    public static final RegistryObject<Item> GILDED_BLACKSTONE_HOE = ITEMS.register("gilded_blackstone_hoe",
+            () -> new HoeItem(ModTiers.GILDED_BLACKSTONE, -1, -2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
-//COPPER TOOLS
+    //ROSE QUARTZ TOOLS
+    public static final RegistryObject<Item> ROSE_QUARTZ_SWORD = ITEMS.register("rose_quartz_sword",
+            () -> new SwordItem(ModTiers.ROSE_QUARTZ, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> ROSE_QUARTZ_PICKAXE = ITEMS.register("rose_quartz_pickaxe",
+            () -> new PickaxeItem(ModTiers.ROSE_QUARTZ, 1, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+    public static final RegistryObject<Item> ROSE_QUARTZ_AXE = ITEMS.register("rose_quartz_axe",
+            () -> new AxeItem(ModTiers.ROSE_QUARTZ, 7, -3.2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+    public static final RegistryObject<Item> ROSE_QUARTZ_SHOVEL = ITEMS.register("rose_quartz_shovel",
+            () -> new ShovelItem(ModTiers.ROSE_QUARTZ, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+    public static final RegistryObject<Item> ROSE_QUARTZ_HOE = ITEMS.register("rose_quartz_hoe",
+            () -> new HoeItem(ModTiers.ROSE_QUARTZ, -1, -2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+
+
+    //COPPER TOOLS
     public static final RegistryObject<Item> COPPER_SWORD = ITEMS.register("copper_sword",
             () -> new SwordItem(ModTiers.COPPER, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe",
@@ -97,11 +140,24 @@ public class ModItems {
     public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe",
             () -> new PickaxeItem(ModTiers.STEEL, 1, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe",
-            () -> new AxeItem(ModTiers.ROSE_GOLD, 7, -3.2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new AxeItem(ModTiers.STEEL, 7, -3.2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel",
-            () -> new ShovelItem(ModTiers.ROSE_GOLD, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new ShovelItem(ModTiers.STEEL, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe",
-            () -> new HoeItem(ModTiers.ROSE_GOLD, -1, -2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new HoeItem(ModTiers.STEEL, -1, -2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+
+    //HELLSTEEL TOOLS
+    public static final RegistryObject<Item> HELLSTEEL_SWORD = ITEMS.register("hellsteel_sword",
+            () -> new SwordItem(ModTiers.HELLSTEEL, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> HELLSTEEL_PICKAXE = ITEMS.register("hellsteel_pickaxe",
+            () -> new PickaxeItem(ModTiers.HELLSTEEL, 1, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+    public static final RegistryObject<Item> HELLSTEEL_AXE = ITEMS.register("hellsteel_axe",
+            () -> new AxeItem(ModTiers.HELLSTEEL, 7, -3.2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+    public static final RegistryObject<Item> HELLSTEEL_SHOVEL = ITEMS.register("hellsteel_shovel",
+            () -> new ShovelItem(ModTiers.HELLSTEEL, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+    public static final RegistryObject<Item> HELLSTEEL_HOE = ITEMS.register("hellsteel_hoe",
+            () -> new HoeItem(ModTiers.HELLSTEEL, -1, -2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+
 
     //COPPER ARMOR
     public static final RegistryObject<Item> COPPER_HELMET = ITEMS.register("copper_helmet",
@@ -113,15 +169,25 @@ public class ModItems {
     public static final RegistryObject<Item> COPPER_BOOTS = ITEMS.register("copper_boots",
             () -> new ArmorItem(ModArmorMaterials.COPPER, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
+    //ROSE QUARTZ ARMOR
+    public static final RegistryObject<Item> ROSE_QUARTZ_HELMET = ITEMS.register("rose_quartz_helmet",
+            () -> new ArmorItem(ModArmorMaterials.ROSE_QUARTZ, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> ROSE_QUARTZ_CHESTPLATE = ITEMS.register("rose_quartz_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.ROSE_QUARTZ, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> ROSE_QUARTZ_LEGGINGS = ITEMS.register("rose_quartz_leggings",
+            () -> new ArmorItem(ModArmorMaterials.ROSE_QUARTZ, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> ROSE_QUARTZ_BOOTS = ITEMS.register("rose_quartz_boots",
+            () -> new ArmorItem(ModArmorMaterials.ROSE_QUARTZ, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
     //ROSE GOLD ARMOR
     public static final RegistryObject<Item> ROSE_GOLD_HELMET = ITEMS.register("rose_gold_helmet",
-            () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new RoseGoldItem(ModArmorMaterials.ROSE_GOLD, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<Item> ROSE_GOLD_CHESTPLATE = ITEMS.register("rose_gold_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new RoseGoldItem(ModArmorMaterials.ROSE_GOLD, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<Item> ROSE_GOLD_LEGGINGS = ITEMS.register("rose_gold_leggings",
-            () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new RoseGoldItem(ModArmorMaterials.ROSE_GOLD, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<Item> ROSE_GOLD_BOOTS = ITEMS.register("rose_gold_boots",
-            () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new RoseGoldItem(ModArmorMaterials.ROSE_GOLD, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
     //STEEL ARMOR
     public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet",
@@ -133,10 +199,29 @@ public class ModItems {
     public static final RegistryObject<Item> STEEL_BOOTS = ITEMS.register("steel_boots",
             () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
+    //HELLSTEEL ARMOR
+    public static final RegistryObject<Item> HELLSTEEL_HELMET = ITEMS.register("hellsteel_helmet",
+            () -> new ArmorItem(ModArmorMaterials.HELLSTEEL, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> HELLSTEEL_CHESTPLATE = ITEMS.register("hellsteel_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.HELLSTEEL, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> HELLSTEEL_LEGGINGS = ITEMS.register("hellsteel_leggings",
+            () -> new ArmorItem(ModArmorMaterials.HELLSTEEL, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> HELLSTEEL_BOOTS = ITEMS.register("hellsteel_boots",
+            () -> new ArmorItem(ModArmorMaterials.HELLSTEEL, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
+    //GILDED BLACKSTONE ARMOR
+    public static final RegistryObject<Item> GILDED_BLACKSTONE_HELMET = ITEMS.register("gilded_blackstone_helmet",
+            () -> new GildedArmorItem(ModArmorMaterials.GILDED_BLACKSTONE, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> GILDED_BLACKSTONE_CHESTPLATE = ITEMS.register("gilded_blackstone_chestplate",
+            () -> new GildedArmorItem(ModArmorMaterials.GILDED_BLACKSTONE, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> GILDED_BLACKSTONE_LEGGINGS = ITEMS.register("gilded_blackstone_leggings",
+            () -> new GildedArmorItem(ModArmorMaterials.GILDED_BLACKSTONE, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> GILDED_BLACKSTONE_BOOTS = ITEMS.register("gilded_blackstone_boots",
+            () -> new GildedArmorItem(ModArmorMaterials.GILDED_BLACKSTONE, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
     //CROWN
     public static final RegistryObject<Item> CROWN = ITEMS.register("crown",
             () -> new ArmorItem(ModArmorMaterials.CROWN, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-
     public static final RegistryObject<Item> MINT_SEEDS = ITEMS.register("mint_seeds",
             () -> new ItemNameBlockItem(ModBlocks.MINT_CROP.get(),new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
@@ -158,6 +243,9 @@ public class ModItems {
     public static final RegistryObject<Item> STAR_HOE = ITEMS.register("star_hoe",
             () -> new HoeItem(ModTiers.STAR, -1, -2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
+
+    public static final RegistryObject<Item> DOG_MUSIC_DISC = ITEMS.register("dog_music_disc",
+            () -> new RecordItem(4, ModSounds.DOG_MUSIC_DISC, new Item.Properties().tab(CreativeModeTab.TAB_MISC).rarity(Rarity.RARE).stacksTo(1),2920));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

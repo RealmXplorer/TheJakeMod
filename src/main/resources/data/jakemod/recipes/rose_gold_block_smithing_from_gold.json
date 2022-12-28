@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:gold_block"
+  },
+  "base": {
+    "item": "minecraft:copper_block"
+  },
+  "result": {
+    "item": "jakemod:rose_gold_block"
+  }
+}

@@ -1,12 +1,12 @@
 package com.jake.jakemod.block;
 
 import com.jake.jakemod.JakeMod;
-import com.jake.jakemod.block.custom.BrimstoneBlock;
-import com.jake.jakemod.block.custom.DirectionalBlock;
+//import com.jake.jakemod.block.custom.KilnBlock;
+import com.jake.jakemod.item.custom.BrimstoneBlock;
 import com.jake.jakemod.block.custom.MintCropBlock;
 import com.jake.jakemod.block.custom.StickBlock;
-import com.jake.jakemod.item.ModCreativeModeTab;
 import com.jake.jakemod.item.ModItems;
+import com.jake.jakemod.item.custom.CharcoalBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,7 +19,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import javax.annotation.Nullable;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -46,6 +45,9 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
 
 
+    //public static final RegistryObject<Block> KILN_BLOCK = registerBlock("kiln",
+      //      () -> new KilnBlock(BlockBehaviour.Properties.of(Material.METAL)
+        //            .strength(6f).requiresCorrectToolForDrops().noOcclusion()), CreativeModeTab.TAB_DECORATIONS);
 
     //POLISHED ANDESITE BRICKS
     public static final RegistryObject<Block> POLISHED_ANDESITE_BRICKS = registerBlock("polished_andesite_bricks",
@@ -79,6 +81,21 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
 
 
+    public static final RegistryObject<Block> SANDSTONE_BRICKS = registerBlock("sandstone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(.5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //POLISHED DIORITE BRICK STAIRS
+    public static final RegistryObject<Block> SANDSTONE_BRICK_STAIRS = registerBlock("sandstone_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.SANDSTONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //POLISHED DIORITE BRICK SLABS
+    public static final RegistryObject<Block> SANDSTONE_BRICK_SLAB = registerBlock("sandstone_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //POLISHED DIORITE BRICK WALLS
+    public static final RegistryObject<Block> SANDSTONE_BRICK_WALL = registerBlock("sandstone_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
+
+
 
     //COMPACT AMETHYST BLOCK
     public static final RegistryObject<Block> COMPACT_AMETHYST_BLOCK = registerBlock("compact_amethyst_block",
@@ -92,16 +109,39 @@ public class ModBlocks {
                     .strength(6f).requiresCorrectToolForDrops()
                     .sound(SoundType.NETHERITE_BLOCK)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
+    //HELLSTEEL BLOCK
+    public static final RegistryObject<Block> HELLSTEEL_BLOCK = registerBlock("hellsteel_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6f).requiresCorrectToolForDrops()
+                    .sound(SoundType.NETHERITE_BLOCK)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    //ROSE QUARTZ BLOCK
+    public static final RegistryObject<Block> ROSE_QUARTZ_BLOCK = registerBlock("rose_quartz_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6f).requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    //SOULSAND STONE
+   // public static final RegistryObject<Block> SOUL_SANDSTONE = registerBlock("soul_sandstone",
+     //       () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+       //             .strength(1f).requiresCorrectToolForDrops()
+         //           .sound(SoundType.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
     //BRIMSTONE BLOCK
-    //public static final RegistryObject<Block> BRIMSTONE_BLOCK = registerBlock("brimstone_block",
-      //      () -> new BrimstoneBlock(BlockBehaviour.Properties.of(Material.STONE)
-        //            .strength(6f).requiresCorrectToolForDrops()
-          //          .sound(SoundType.BASALT)), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> BRIMSTONE_BLOCK = registerBlock("brimstone_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()
                     .sound(SoundType.BASALT)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
+    public static final RegistryObject<Block> CHARCOAL_BLOCK = registerBlock("charcoal_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    //public static final RegistryObject<Block> KILN = registerBlock("kiln",
+      //      () -> new KilnBlock(BlockBehaviour.Properties.of(Material.STONE)
+        //            .strength(6f).requiresCorrectToolForDrops()
+          //          .sound(SoundType.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     //ZIRCON BLOCK
     //public static final RegistryObject<Block> ZIRCON_BLOCK = registerBlock("zircon_block",
@@ -167,6 +207,63 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE)
     .sound(SoundType.TUFF).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
 
+    //DRIPSTONE STAIRS
+    public static final RegistryObject<Block> DRIPSTONE_STAIRS = registerBlock("dripstone_stairs",
+            () -> new StairBlock(() -> Blocks.DRIPSTONE_BLOCK.defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .sound(SoundType.DRIPSTONE_BLOCK)
+                            .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //DRIPSTONE SLABS
+    public static final RegistryObject<Block> DRIPSTONE_SLAB = registerBlock("dripstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.DRIPSTONE_BLOCK)
+                    .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //DRIPSTONE WALLS
+    public static final RegistryObject<Block> DRIPSTONE_WALL = registerBlock("dripstone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.DRIPSTONE_BLOCK).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
+
+
+    //POLISHED DRIPSTONE BLOCK
+    public static final RegistryObject<Block> POLISHED_DRIPSTONE = registerBlock("polished_dripstone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()
+                    .sound(SoundType.DRIPSTONE_BLOCK)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //POLISHED DRIPSTONE STAIRS
+    public static final RegistryObject<Block> POLISHED_DRIPSTONE_STAIRS = registerBlock("polished_dripstone_stairs",
+            () -> new StairBlock(() -> ModBlocks.POLISHED_DRIPSTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .sound(SoundType.DRIPSTONE_BLOCK)
+                            .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //POLISHED DRIPSTONE SLABS
+    public static final RegistryObject<Block> POLISHED_DRIPSTONE_SLAB = registerBlock("polished_dripstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.DRIPSTONE_BLOCK)
+                    .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+
+    //POLISHED DRIPSTONE BRICKS
+    public static final RegistryObject<Block> POLISHED_DRIPSTONE_BRICKS = registerBlock("polished_dripstone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()
+                    .sound(SoundType.DRIPSTONE_BLOCK)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //POLISHED DRIPSTONE BRICK STAIRS
+    public static final RegistryObject<Block> POLISHED_DRIPSTONE_BRICK_STAIRS = registerBlock("polished_dripstone_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.POLISHED_DRIPSTONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .sound(SoundType.DRIPSTONE_BLOCK)
+                            .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //POLISHED DRIPSTONE BRICK SLABS
+    public static final RegistryObject<Block> POLISHED_DRIPSTONE_BRICK_SLAB = registerBlock("polished_dripstone_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.DRIPSTONE_BLOCK)
+                    .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //POLISHED DRIPSTONE BRICK WALLS
+    public static final RegistryObject<Block> POLISHED_DRIPSTONE_BRICK_WALL = registerBlock("polished_dripstone_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()
+                    .sound(SoundType.DRIPSTONE_BLOCK)), CreativeModeTab.TAB_DECORATIONS);
 
 
     //POLISHED TUFF BLOCK
@@ -215,6 +312,65 @@ public class ModBlocks {
             () -> new StickBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1f)
                     .sound(SoundType.SCAFFOLDING)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
+
+    //CALCITE STAIRS
+    public static final RegistryObject<Block> CALCITE_STAIRS = registerBlock("calcite_stairs",
+            () -> new StairBlock(() -> Blocks.CALCITE.defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .sound(SoundType.CALCITE)
+                            .strength(1f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //CALCITE SLABS
+    public static final RegistryObject<Block> CALCITE_SLAB = registerBlock("calcite_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.CALCITE)
+                    .strength(1f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //CALCITE WALLS
+    public static final RegistryObject<Block> CALCITE_WALL = registerBlock("calcite_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.CALCITE).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
+
+
+    //POLISHED CALCITE BLOCK
+    public static final RegistryObject<Block> POLISHED_CALCITE = registerBlock("polished_calcite",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()
+                    .sound(SoundType.CALCITE)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //POLISHED CALCITE STAIRS
+    public static final RegistryObject<Block> POLISHED_CALCITE_STAIRS = registerBlock("polished_calcite_stairs",
+            () -> new StairBlock(() -> ModBlocks.POLISHED_CALCITE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .sound(SoundType.CALCITE)
+                            .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //POLISHED CALCITE SLABS
+    public static final RegistryObject<Block> POLISHED_CALCITE_SLAB = registerBlock("polished_calcite_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.CALCITE)
+                    .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    //POLISHED CALCITE BRICKS BLOCK
+    public static final RegistryObject<Block> POLISHED_CALCITE_BRICKS = registerBlock("polished_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()
+                    .sound(SoundType.CALCITE)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //POLISHED CALCITE BRICK STAIRS
+    public static final RegistryObject<Block> POLISHED_CALCITE_BRICK_STAIRS = registerBlock("polished_calcite_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.POLISHED_CALCITE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .sound(SoundType.CALCITE)
+                            .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //POLISHED CALCITE BRICK SLABS
+    public static final RegistryObject<Block> POLISHED_CALCITE_BRICK_SLAB = registerBlock("polished_calcite_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.CALCITE)
+                    .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //POLISHED CALCITE BRICK WALLS
+    public static final RegistryObject<Block> POLISHED_CALCITE_BRICK_WALL = registerBlock("polished_calcite_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()
+                    .sound(SoundType.CALCITE)), CreativeModeTab.TAB_DECORATIONS);
+
+
     //PINE PLANKS?
     public static final RegistryObject<Block> PINE_PLANKS = registerBlock("pine_planks",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)
@@ -243,6 +399,69 @@ public class ModBlocks {
     public static final RegistryObject<Block> SNOW_BRICK_WALL = registerBlock("snow_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(.5f).requiresCorrectToolForDrops()
                     .sound(SoundType.SNOW)), CreativeModeTab.TAB_DECORATIONS);
+
+
+    //SMOOTH BASALT STAIRS
+    public static final RegistryObject<Block> SMOOTH_BASALT_STAIRS = registerBlock("smooth_basalt_stairs",
+            () -> new StairBlock(() -> Blocks.SMOOTH_BASALT.defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .sound(SoundType.BASALT)
+                            .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //SMOOTH BASALT SLABS
+    public static final RegistryObject<Block> SMOOTH_BASALT_SLAB = registerBlock("smooth_basalt_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.BASALT)
+                    .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //SMOOTH BASALT WALLS
+    public static final RegistryObject<Block> SMOOTH_BASALT_WALL = registerBlock("smooth_basalt_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.BASALT).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
+
+
+
+    //CUT BASALT BLOCK
+    public static final RegistryObject<Block> CUT_BASALT = registerBlock("cut_basalt",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()
+                    .sound(SoundType.BASALT)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //CUT BASALT STAIRS
+    public static final RegistryObject<Block> CUT_BASALT_STAIRS = registerBlock("cut_basalt_stairs",
+            () -> new StairBlock(() -> ModBlocks.CUT_BASALT.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .sound(SoundType.BASALT)
+                            .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //CUT BASALT SLABS
+    public static final RegistryObject<Block> CUT_BASALT_SLAB = registerBlock("cut_basalt_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.BASALT)
+                    .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+
+
+
+
+    //BASALT BRICKS
+    public static final RegistryObject<Block> BASALT_BRICKS = registerBlock("basalt_bricks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()
+                    .sound(SoundType.BASALT)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //BASALT BRICK STAIRS
+    public static final RegistryObject<Block> BASALT_BRICK_STAIRS = registerBlock("basalt_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.BASALT_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .sound(SoundType.BASALT)
+                            .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //BASALT BRICK SLABS
+    public static final RegistryObject<Block> BASALT_BRICK_SLAB = registerBlock("basalt_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.BASALT)
+                    .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //BASALT BRICK WALLS
+    public static final RegistryObject<Block> BASALT_BRICK_WALL = registerBlock("basalt_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()
+                    .sound(SoundType.BASALT)), CreativeModeTab.TAB_DECORATIONS);
 
     //MINT CROP
     public static final RegistryObject<Block> MINT_CROP = BLOCKS.register("mint_crop",
@@ -299,9 +518,13 @@ public class ModBlocks {
         return toReturn;
     }
 
-    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block,
-                                                                            CreativeModeTab tab){
-        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab){
+        if (name.equals("brimstone_block"))
+            return ModItems.ITEMS.register(name,() -> new BrimstoneBlock(block.get(), new Item.Properties().tab(tab)));
+        else if(name.equals("charcoal_block"))
+            return ModItems.ITEMS.register(name,() -> new CharcoalBlock(block.get(), new Item.Properties().tab(tab)));
+        else
+            return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
     }
 
     public static void register(IEventBus eventBus) {

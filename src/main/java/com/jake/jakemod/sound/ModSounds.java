@@ -13,6 +13,7 @@ public class ModSounds {
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, JakeMod.MOD_ID);
 
 
+    public static RegistryObject<SoundEvent> DOG_MUSIC_DISC = registerSoundEvent("dog_music_disc");
     private static RegistryObject<SoundEvent> registerSoundEvent(String name){
         return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(JakeMod.MOD_ID,name)));
     }

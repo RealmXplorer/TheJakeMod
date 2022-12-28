@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "jakemod:rose_quartz_block"
+  }
+],
+
+  "result": {
+    "item": "jakemod:rose_quartz",
+    "count": 9
+  }
+}

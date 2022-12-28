@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#@#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:nether_wart"
+    },
+    "@": {
+      "item": "minecraft:ghast_tear"
+    }
+  },
+  "result": {
+    "item": "jakemod:ghast_berry",
+    "count": 9
+  }
+}

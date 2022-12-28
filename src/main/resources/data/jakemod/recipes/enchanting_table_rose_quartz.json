@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:obsidian"
+    },
+    "B": {
+      "item": "jakemod:warped_book"
+    },
+    "R": {
+      "item": "jakemod:rose_quartz"
+    }
+  },
+  "pattern": [
+    " B ",
+    "R#R",
+    "###"
+  ],
+  "result": {
+    "item": "minecraft:enchanting_table"
+  }
+}

@@ -14,14 +14,14 @@
     "minecraft:redstone_ore",
     "minecraft:deepslate_redstone_ore",
 
-    "jakemod:zircon_block",
-    "jakemod:zircon_ore",
     "jakemod:deepslate_zircon_ore",
     "jakemod:compact_amethyst_block",
     "jakemod:ruby_block",
     "jakemod:ruby_ore",
     "jakemod:deepslate_ruby_ore",
     "jakemod:rose_gold_block",
-    "jakemod:steel_block"
+    "jakemod:steel_block",
+    "jakemod:hellsteel_block",
+    "jakemod:rose_quartz_block"
   ]
 }

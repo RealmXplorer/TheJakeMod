@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "jakemod:item/rose_quartz_sword"
+  }
+}

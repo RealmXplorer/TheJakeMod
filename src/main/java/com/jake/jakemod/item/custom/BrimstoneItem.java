@@ -12,6 +12,6 @@ public class BrimstoneItem extends Item {
 
     @Override
     public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
-        return 3200;
+        return 2400;
     }
 }

@@ -367,6 +367,54 @@
 
     "jakemod:candy_cane_block",
     "jakemod:rose_gold_block",
-    "jakemod:steel_block"
+    "jakemod:steel_block",
+
+    "jakemod:sandstone_bricks",
+    "jakemod:sandstone_brick_slab",
+    "jakemod:sandstone_brick_stairs",
+    "jakemod:sandstone_brick_wall",
+
+    "jakemod:calcite_slab",
+    "jakemod:calcite_stairs",
+    "jakemod:calcite_wall",
+
+    "jakemod:polished_calcite",
+    "jakemod:polished_calcite_slab",
+    "jakemod:polished_calcite_stairs",
+
+    "jakemod:dripstone_slab",
+    "jakemod:dripstone_stairs",
+    "jakemod:dripstone_wall",
+
+    "jakemod:polished_dripstone",
+    "jakemod:polished_dripstone_slab",
+    "jakemod:polished_dripstone_stairs",
+
+    "jakemod:polished_dripstone_bricks",
+    "jakemod:polished_dripstone_brick_slab",
+    "jakemod:polished_dripstone_brick_stairs",
+    "jakemod:polished_dripstone_brick_wall",
+
+    "jakemod:cut_basalt",
+    "jakemod:cut_basalt_slab",
+    "jakemod:cut_basalt_stairs",
+
+    "jakemod:smooth_basalt_slab",
+    "jakemod:smooth_basalt_stairs",
+    "jakemod:smooth_basalt_wall",
+    
+    "jakemod:basalt_bricks",
+    "jakemod:basalt_brick_slab",
+    "jakemod:basalt_brick_stairs",
+    "jakemod:basalt_brick_wall",
+    
+    "jakemod:polished_calcite_bricks",
+    "jakemod:polished_calcite_brick_slab",
+    "jakemod:polished_calcite_brick_stairs",
+    "jakemod:polished_calcite_brick_wall",
+
+    "jakemod:charcoal_block",
+    "jakemod:rose_quartz_block",
+    "jakemod:hellsteel_block"
   ]
 }

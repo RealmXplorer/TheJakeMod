@@ -1,9 +1,19 @@
 {
+  "item.jakemod.dog_music_disc": "Music Disc",
+  "item.jakemod.dog_music_disc.desc": "C418 - dog",
+
   "item.jakemod.copper_nugget": "Copper Nugget",
 
   "item.jakemod.rose_gold_ingot": "Rose Gold Ingot",
 
   "item.jakemod.steel_ingot": "Steel Ingot",
+
+  "item.jakemod.hellsteel_ingot": "Hellsteel Ingot",
+
+  "item.jakemod.warped_paper": "Warped Paper",
+  "item.jakemod.warped_book": "Warped Book",
+
+  "item.jakemod.ghast_berry": "Ghast Berry",
 
   "item.jakemod.brimstone": "Brimstone",
 
@@ -25,6 +35,12 @@
   "item.jakemod.steel_shovel": "Steel Shovel",
   "item.jakemod.steel_hoe": "Steel Hoe",
 
+  "item.jakemod.hellsteel_sword": "Hellsteel Sword",
+  "item.jakemod.hellsteel_pickaxe": "Hellsteel Pickaxe",
+  "item.jakemod.hellsteel_axe": "Hellsteel Axe",
+  "item.jakemod.hellsteel_shovel": "Hellsteel Shovel",
+  "item.jakemod.hellsteel_hoe": "Hellsteel Hoe",
+
   "item.jakemod.copper_helmet": "Copper Helmet",
   "item.jakemod.copper_chestplate": "Copper Chestplate",
   "item.jakemod.copper_leggings": "Copper Leggings",
@@ -35,26 +51,54 @@
   "item.jakemod.rose_gold_leggings": "Rose Gold Leggings",
   "item.jakemod.rose_gold_boots": "Rose Gold Boots",
 
+  "item.jakemod.rose_quartz_helmet": "Rose Quartz Helmet",
+  "item.jakemod.rose_quartz_chestplate": "Rose Quartz Chestplate",
+  "item.jakemod.rose_quartz_leggings": "Rose Quartz Leggings",
+  "item.jakemod.rose_quartz_boots": "Rose Quartz Boots",
+
   "item.jakemod.steel_helmet": "Steel Helmet",
   "item.jakemod.steel_chestplate": "Steel Chestplate",
   "item.jakemod.steel_leggings": "Steel Leggings",
   "item.jakemod.steel_boots": "Steel Boots",
 
+  "item.jakemod.gilded_blackstone_helmet": "Gilded Blackstone Helmet",
+  "item.jakemod.gilded_blackstone_chestplate": "Gilded Blackstone Chestplate",
+  "item.jakemod.gilded_blackstone_leggings": "Gilded Blackstone Leggings",
+  "item.jakemod.gilded_blackstone_boots": "Gilded Blackstone Boots",
+
+  "item.jakemod.hellsteel_helmet": "Hellsteel Helmet",
+  "item.jakemod.hellsteel_chestplate": "Hellsteel Chestplate",
+  "item.jakemod.hellsteel_leggings": "Hellsteel Leggings",
+  "item.jakemod.hellsteel_boots": "Hellsteel Boots",
+
   "item.jakemod.amethyst_sword": "Amethyst Sword",
 
-  "item.jakemod.star_shard": "Star Shard",
+  "item.jakemod.star_shard": "Starlight Shard",
 
-  "item.jakemod.star_blade": "The Star Blade",
-  "item.jakemod.star_pickaxe": "Star Pickaxe",
-  "item.jakemod.star_axe": "Star Axe",
-  "item.jakemod.star_shovel": "Star Shovel",
-  "item.jakemod.star_hoe": "Star Hoe",
+  "item.jakemod.star_blade": "Starlight Sword",
+  "item.jakemod.star_pickaxe": "Starlight Pickaxe",
+  "item.jakemod.star_axe": "Starlight Axe",
+  "item.jakemod.star_shovel": "Starlight Shovel",
+  "item.jakemod.star_hoe": "Starlight Hoe",
 
   "item.jakemod.granite_sword": "Granite Sword",
   "item.jakemod.granite_pickaxe": "Granite Pickaxe",
   "item.jakemod.granite_axe": "Granite Axe",
   "item.jakemod.granite_shovel": "Granite Shovel",
   "item.jakemod.granite_hoe": "Granite Hoe",
+
+  "item.jakemod.rose_quartz": "Rose Quartz",
+  "item.jakemod.rose_quartz_sword": "Rose Quartz Sword",
+  "item.jakemod.rose_quartz_pickaxe": "Rose Quartz Pickaxe",
+  "item.jakemod.rose_quartz_axe": "Rose Quartz Axe",
+  "item.jakemod.rose_quartz_shovel": "Rose Quartz Shovel",
+  "item.jakemod.rose_quartz_hoe": "Rose Quartz Hoe",
+
+  "item.jakemod.gilded_blackstone_sword": "Gilded Blackstone Sword",
+  "item.jakemod.gilded_blackstone_pickaxe": "Gilded Blackstone Pickaxe",
+  "item.jakemod.gilded_blackstone_axe": "Gilded Blackstone Axe",
+  "item.jakemod.gilded_blackstone_shovel": "Gilded Blackstone Shovel",
+  "item.jakemod.gilded_blackstone_hoe": "Gilded Blackstone Hoe",
 
   "item.jakemod.cocoa_powder": "Cocoa Powder",
   "item.jakemod.chocolate_bar": "Chocolate Bar",
@@ -107,17 +151,22 @@
   "block.jakemod.polished_tuff_brick_slab": "Polished Tuff Brick Slab",
   "block.jakemod.polished_tuff_brick_wall": "Polished Tuff Brick Wall",
 
+  "block.jakemod.rose_quartz_block": "Block of Rose Quartz",
 
   "block.jakemod.pine_planks": "Pine Planks",
 
+  "block.jakemod.soul_sandstone": "Soul Sandstone",
   "block.jakemod.soul_glass": "Soul Glass",
   "block.jakemod.soul_glass_pane": "Soul Glass Pane",
 
   "block.jakemod.compact_amethyst_block": "Compact Block of Amethyst",
 
   "block.jakemod.steel_block": "Block of Steel",
+  "block.jakemod.hellsteel_block": "Block of Hellsteel",
 
   "block.jakemod.brimstone_block": "Block of Brimstone",
+
+  "block.jakemod.charcoal_block": "Block of Charcoal",
 
   "block.jakemod.candy_cane_block": "Candy Cane Block",
 
@@ -128,6 +177,50 @@
   "block.jakemod.copper_button": "Copper Button",
   "block.jakemod.copper_pressure_plate": "Copper Pressure Plate",
 
+
+  "block.jakemod.sandstone_bricks": "Sandstone Bricks",
+  "block.jakemod.sandstone_brick_slab": "Sandstone Brick Slab",
+  "block.jakemod.sandstone_brick_stairs": "Sandstone Brick Stairs",
+  "block.jakemod.sandstone_brick_wall": "Sandstone Brick Wall",
+
+  "block.jakemod.calcite_stairs": "Calcite Stairs",
+  "block.jakemod.calcite_slab": "Calcite Slab",
+  "block.jakemod.calcite_wall": "Calcite Wall",
+
+  "block.jakemod.polished_calcite": "Polished Calcite",
+  "block.jakemod.polished_calcite_slab": "Polished Calcite Slab",
+  "block.jakemod.polished_calcite_stairs": "Polished Calcite Stairs",
+
+  "block.jakemod.polished_calcite_bricks": "Polished Calcite Bricks",
+  "block.jakemod.polished_calcite_brick_slab": "Polished Calcite Brick Slab",
+  "block.jakemod.polished_calcite_brick_stairs": "Polished Calcite Brick Stairs",
+  "block.jakemod.polished_calcite_brick_wall": "Polished Calcite Brick Wall",
+
+  "block.jakemod.smooth_basalt_slab": "Smooth Basalt Slab",
+  "block.jakemod.smooth_basalt_stairs": "Smooth Basalt Stairs",
+  "block.jakemod.smooth_basalt_wall": "Smooth Basalt Wall",
+
+  "block.jakemod.dripstone_slab": "Dripstone Slab",
+  "block.jakemod.dripstone_stairs": "Dripstone Stairs",
+  "block.jakemod.dripstone_wall": "Dripstone Wall",
+
+  "block.jakemod.polished_dripstone": "Polished Dripstone",
+  "block.jakemod.polished_dripstone_slab": "Polished Dripstone Slab",
+  "block.jakemod.polished_dripstone_stairs": "Polished Dripstone Stairs",
+
+  "block.jakemod.polished_dripstone_bricks": "Polished Dripstone Bricks",
+  "block.jakemod.polished_dripstone_brick_slab": "Polished Dripstone Brick Slab",
+  "block.jakemod.polished_dripstone_brick_stairs": "Polished Dripstone Brick Stairs",
+  "block.jakemod.polished_dripstone_brick_wall": "Polished Dripstone Brick Wall",
+
+  "block.jakemod.cut_basalt": "Cut Basalt",
+  "block.jakemod.cut_basalt_slab": "Cut Basalt Slab",
+  "block.jakemod.cut_basalt_stairs": "Cut Basalt Stairs",
+  
+  "block.jakemod.basalt_bricks": "Basalt Bricks",
+  "block.jakemod.basalt_brick_slab": "Basalt Brick Slab",
+  "block.jakemod.basalt_brick_stairs": "Basalt Brick Stairs",
+  "block.jakemod.basalt_brick_wall": "Basalt Brick Wall",
 
   "block.jakemod.polished_tuff": "Polished Tuff",
   "block.jakemod.polished_tuff_slab": "Polished Tuff Slab",

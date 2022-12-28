@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "jakemod:block/sandstone_bricks",
+    "side": "jakemod:block/sandstone_bricks",
+    "top": "jakemod:block/sandstone_bricks"
+  }
+}

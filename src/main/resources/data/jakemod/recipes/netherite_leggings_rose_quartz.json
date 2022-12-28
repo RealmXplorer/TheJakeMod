@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "jakemod:rose_quartz_leggings"
+  },
+  "result": {
+    "item": "minecraft:netherite_leggings"
+  }
+}

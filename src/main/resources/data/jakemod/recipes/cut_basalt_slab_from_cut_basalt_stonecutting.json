@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "jakemod:cut_basalt"
+  },
+  "result": "jakemod:cut_basalt_slab"
+}

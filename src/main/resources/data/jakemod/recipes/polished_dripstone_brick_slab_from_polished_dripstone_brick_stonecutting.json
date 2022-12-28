@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "jakemod:polished_dripstone_bricks"
+  },
+  "result": "jakemod:polished_dripstone_brick_slab"
+}

@@ -1,6 +1,7 @@
 package com.jake.jakemod;
 
 import com.jake.jakemod.block.ModBlocks;
+import com.jake.jakemod.block.entity.ModBlockEntities;
 import com.jake.jakemod.item.ModItems;
 import com.jake.jakemod.loot.ModLootModifiers;
 import com.jake.jakemod.potion.ModPotions;
@@ -44,6 +45,8 @@ public class JakeMod
         ModPlacedFeatures.register(modEventBus);
         ModLootModifiers.register(modEventBus);
         ModPotions.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::clientSetup);

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "jakemod:warped_paper"
+    },
+    {
+      "item": "jakemod:warped_paper"
+    },
+    {
+      "item": "jakemod:warped_paper"
+    },
+    {
+      "item": "minecraft:leather"
+    }
+  ],
+  "result": {
+    "item": "jakemod:warped_book"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "@#@",
+    "#X#",
+    "B#B"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:quartz"
+    },
+    "@": {
+      "item": "minecraft:glowstone"
+    },
+    "B": {
+      "item": "jakemod:brimstone"
+    },
+    "X": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "result": {
+    "item": "jakemod:rose_quartz",
+    "count": 2
+  }
+}

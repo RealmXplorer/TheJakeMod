@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "jakemod:hellsteel_ingot"
+    }
+  },
+  "result": {
+    "item": "jakemod:hellsteel_chestplate"
+  }
+}

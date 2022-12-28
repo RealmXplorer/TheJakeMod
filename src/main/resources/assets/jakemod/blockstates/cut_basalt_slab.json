@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "jakemod:block/cut_basalt_slab"
+    },
+    "type=double": {
+      "model": "jakemod:block/cut_basalt"
+    },
+    "type=top": {
+      "model": "jakemod:block/cut_basalt_slab_top"
+    }
+  }
+}
