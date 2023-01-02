@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": [
+      {
+        "item": "jakemod:soul_glass"
+      },
+      {
+        "item": "jakemod:end_glass"
+      }
+    ]
+  },
+  "pattern": [
+    "   ",
+    "# #",
+    " # "
+  ],
+  "result": {
+    "count": 3,
+    "item": "minecraft:glass_bottle"
+  }
+}

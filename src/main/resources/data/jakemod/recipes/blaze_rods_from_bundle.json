@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "jakemod:blaze_bundle"
+  }
+],
+
+  "result": {
+    "item": "minecraft:blaze_rod",
+    "count": 9
+  }
+}

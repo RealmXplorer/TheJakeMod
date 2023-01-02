@@ -1,6 +1,7 @@
 package com.jake.jakemod.item;
 
 import com.jake.jakemod.JakeMod;
+import com.jake.jakemod.block.ModBlocks;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.LazyLoadedValue;
@@ -22,6 +23,9 @@ public enum ModArmorMaterials implements ArmorMaterial{
         return Ingredient.of(Items.GILDED_BLACKSTONE);
     }),
 
+    GRIM("grim",15, new int[]{3, 6, 4, 2}, 9, SoundEvents.ARMOR_EQUIP_IRON, 0.03F, 0.03F, () -> {
+        return Ingredient.of(ModBlocks.GRIMSTONE.get());
+    }),
     ROSE_QUARTZ("rose_quartz", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
         return Ingredient.of(ModItems.ROSE_QUARTZ.get());
     }),
@@ -32,7 +36,7 @@ public enum ModArmorMaterials implements ArmorMaterial{
         return Ingredient.of(ModItems.STEEL_INGOT.get());
     }),
 
-    HELLSTEEL("hellsteel", 20, new int[]{3, 5, 6, 3}, 9, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.25F, 0.05F, () -> {
+    HELLSTEEL("hellsteel", 20, new int[]{3, 5, 5, 3}, 9, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.25F, 0.05F, () -> {
         return Ingredient.of(ModItems.HELLSTEEL_INGOT.get());
     }),
 

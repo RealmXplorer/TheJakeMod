@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
 "ingredients": [
   {
-    "item": "minecraft:amethyst_shard"
+    "item": "jakemod:end_dust"
   },
   {
     "item": "minecraft:echo_shard"

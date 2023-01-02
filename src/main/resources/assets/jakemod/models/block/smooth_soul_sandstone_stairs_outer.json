@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "jakemod:block/soul_sandstone_top",
+    "side": "jakemod:block/soul_sandstone_top",
+    "top": "jakemod:block/soul_sandstone_top"
+  }
+}

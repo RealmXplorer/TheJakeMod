@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": [{
+    "item": "minecraft:red_mushroom"
+  },
+    {
+      "item": "minecraft:crimson_fungus"
+    }
+
+  ],
+  "result": "minecraft:red_dye"
+}

@@ -138,6 +138,18 @@
         "max": 4.0,
         "min": 2.0
       }
+    },
+    {
+      "type": "minecraft:item",
+      "functions": [
+        {
+          "add": false,
+          "count": 1,
+          "function": "minecraft:set_count"
+        }
+      ],
+      "name": "jakemod:music_disc_kingstead",
+      "weight": 2
     }
   ]
 }

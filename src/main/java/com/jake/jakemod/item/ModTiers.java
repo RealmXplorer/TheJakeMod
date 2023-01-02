@@ -1,5 +1,6 @@
 package com.jake.jakemod.item;
 
+import com.jake.jakemod.block.ModBlocks;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -21,6 +22,9 @@ public class ModTiers {
 
     public static final ForgeTier GILDED_BLACKSTONE = new ForgeTier(2, 250, 6.0F, 2.0F, 14, BlockTags.NEEDS_STONE_TOOL,
             () -> Ingredient.of(Items.GILDED_BLACKSTONE));
+
+    public static final ForgeTier GRIM = new ForgeTier(2, 220, 5.75F, 2.0F, 12, BlockTags.NEEDS_STONE_TOOL,
+            () -> Ingredient.of(ModBlocks.GRIMSTONE.get()));
 
     public static final ForgeTier ROSE_QUARTZ = new ForgeTier(3, 1561, 8.0F, 3.0F, 10, BlockTags.NEEDS_IRON_TOOL,
             () -> Ingredient.of(ModItems.ROSE_QUARTZ.get()));

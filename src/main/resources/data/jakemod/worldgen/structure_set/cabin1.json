@@ -1,0 +1,17 @@
+{
+"structures": [
+    {
+      "structure": "jakemod:cabin1",
+      "weight": 1
+    }
+  ],
+  "placement": {
+"salt": 1642476474,
+
+"spacing": 60,
+
+"separation": 50,
+
+    "type": "minecraft:random_spread"
+  }
+}

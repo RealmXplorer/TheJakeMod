@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "jakemod:grimstone"
+  },
+  {
+    "item": "minecraft:ender_pearl"
+  }
+],
+
+  "result": {
+    "item": "jakemod:end_dust",
+    "count": 2
+  }
+}

@@ -15,6 +15,8 @@
 
   "item.jakemod.philosopher_stone": "Philosopher's Stone",
 
+  "item.jakemod.abysson": "Abysson",
+
   "item.jakemod.warped_paper": "Warped Paper",
   "item.jakemod.warped_book": "Warped Book",
 
@@ -97,6 +99,17 @@
   "item.jakemod.granite_shovel": "Granite Shovel",
   "item.jakemod.granite_hoe": "Granite Hoe",
 
+  "item.jakemod.grim_sword": "Grim Sword",
+  "item.jakemod.grim_pickaxe": "Grim Pickaxe",
+  "item.jakemod.grim_axe": "Grim Axe",
+  "item.jakemod.grim_shovel": "Grim Shovel",
+  "item.jakemod.grim_hoe": "Grim Hoe",
+
+  "item.jakemod.grim_helmet": "Grim Helmet",
+  "item.jakemod.grim_chestplate": "Grim Chestplate",
+  "item.jakemod.grim_leggings": "Grim Leggings",
+  "item.jakemod.grim_boots": "Grim Boots",
+
   "item.jakemod.rose_quartz": "Rose Quartz",
   "item.jakemod.rose_quartz_sword": "Rose Quartz Sword",
   "item.jakemod.rose_quartz_pickaxe": "Rose Quartz Pickaxe",
@@ -118,6 +131,8 @@
   "item.jakemod.mint": "Mint",
   "item.jakemod.mint_seeds": "Mint Seeds",
 
+  "item.jakemod.end_dust": "End Dust",
+  "item.jakemod.ender_fruit": "Normalized Chorus Fruit",
 
   "item.jakemod.glass_shard": "Glass Shard",
 
@@ -161,15 +176,46 @@
   "block.jakemod.polished_tuff_brick_slab": "Polished Tuff Brick Slab",
   "block.jakemod.polished_tuff_brick_wall": "Polished Tuff Brick Wall",
 
+  "block.jakemod.grimstone": "Grimstone",
+  "block.jakemod.grimstone_bricks": "Grimstone Bricks",
+
+  "block.jakemod.purpur_wall": "Purpur Wall",
+
+  "block.jakemod.nether_brick_pillar": "Nether Brick Pillar",
+
+  "block.jakemod.oak_leaf_carpet": "Oak Leaf Carpet",
+
   "block.jakemod.rose_quartz_block": "Block of Rose Quartz",
 
-  "block.jakemod.pine_planks": "Pine Planks",
+  "block.jakemod.cracked_sandstone": "Cracked Sandstone",
+  "block.jakemod.cracked_red_sandstone": "Cracked Red Sandstone",
+  "block.jakemod.cracked_soul_sandstone": "Cracked Soul Sandstone",
 
   "block.jakemod.soul_sandstone": "Soul Sandstone",
+  "block.jakemod.soul_sandstone_stairs": "Soul Sandstone Stairs",
+  "block.jakemod.soul_sandstone_slab": "Soul Sandstone Slab",
+  "block.jakemod.soul_sandstone_wall": "Soul Sandstone Wall",
+  "block.jakemod.chiseled_soul_sandstone": "Chiseled Soul Sandstone",
+  "block.jakemod.cut_soul_sandstone": "Cut Soul Sandstone",
+  "block.jakemod.cut_soul_sandstone_slab": "Cut Soul Sandstone Slab",
+  "block.jakemod.smooth_soul_sandstone": "Smooth Soul Sandstone",
+  "block.jakemod.smooth_soul_sandstone_stairs": "Smooth Soul Sandstone Stairs",
+  "block.jakemod.smooth_soul_sandstone_slab": "Smooth Soul Sandstone Slab",
+
+  "block.jakemod.soul_sandstone_bricks": "Soul Sandstone Bricks",
+  "block.jakemod.soul_sandstone_brick_stairs": "Soul Sandstone Brick Stairs",
+  "block.jakemod.soul_sandstone_brick_slab": "Soul Sandstone Brick Slab",
+  "block.jakemod.soul_sandstone_brick_wall": "Soul Sandstone Brick Wall",
+
   "block.jakemod.soul_glass": "Soul Glass",
   "block.jakemod.soul_glass_pane": "Soul Glass Pane",
 
+  "block.jakemod.end_glass": "End Glass",
+  "block.jakemod.end_glass_pane": "End Glass Pane",
+
   "block.jakemod.compact_amethyst_block": "Compact Block of Amethyst",
+
+  "block.jakemod.nether_core": "Nether Reactor Core",
 
   "block.jakemod.steel_block": "Block of Steel",
   "block.jakemod.hellsteel_block": "Block of Hellsteel",
@@ -180,9 +226,13 @@
 
   "block.jakemod.candy_cane_block": "Candy Cane Block",
 
+  "block.jakemod.cyan_rose": "Cyan Rose",
+  "block.jakemod.potted_cyan_rose": "Potted Cyan Rose",
+
   "block.jakemod.rose_gold_block": "Block of Rose Gold",
 
   "block.jakemod.soul_tnt": "Soul TNT",
+  "block.jakemod.kiln_block": "Kiln",
 
   "block.jakemod.copper_door": "Copper Door",
   "block.jakemod.copper_trapdoor": "Copper Trapdoor",
@@ -197,6 +247,33 @@
   "block.jakemod.sandstone_brick_slab": "Sandstone Brick Slab",
   "block.jakemod.sandstone_brick_stairs": "Sandstone Brick Stairs",
   "block.jakemod.sandstone_brick_wall": "Sandstone Brick Wall",
+
+  "block.jakemod.red_sandstone_bricks": "Red Sandstone Bricks",
+  "block.jakemod.red_sandstone_brick_slab": "Red Sandstone Brick Slab",
+  "block.jakemod.red_sandstone_brick_stairs": "Red Sandstone Brick Stairs",
+  "block.jakemod.red_sandstone_brick_wall": "Red Sandstone Brick Wall",
+
+  "block.jakemod.blaze_bundle": "Blaze Bundle",
+
+  "block.jakemod.end_sand": "End Sand",
+  "block.jakemod.void_lantern": "Void Lantern",
+
+  "block.jakemod.chorus_log": "Chorus Log",
+  "block.jakemod.stripped_chorus_log": "Stripped Chorus Log",
+  "block.jakemod.chorus_wood": "Chorus Wood",
+  "block.jakemod.chorus_pressure_plate": "Chorus Pressure Plate",
+  "block.jakemod.chorus_planks": "Chorus Planks",
+  "block.jakemod.chorus_stairs": "Chorus Stairs",
+  "block.jakemod.chorus_slab": "Chorus Slab",
+  "block.jakemod.chorus_fence": "Chorus Fence",
+  "block.jakemod.chorus_fence_gate": "Chorus Fence Gate",
+  "block.jakemod.chorus_door": "Chorus Door",
+  "block.jakemod.chorus_trapdoor": "Chorus Trapdoor",
+  "block.jakemod.chorus_button": "Chorus Button",
+
+  "block.jakemod.abysson_ore": "Abysson Ore",
+  "block.jakemod.abysson_block": "Abysson Block",
+
 
   "block.jakemod.calcite_stairs": "Calcite Stairs",
   "block.jakemod.calcite_slab": "Calcite Slab",

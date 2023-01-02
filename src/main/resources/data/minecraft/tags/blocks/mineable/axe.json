@@ -82,6 +82,16 @@
     "#minecraft:wooden_trapdoors",
     "minecraft:mangrove_roots",
     "jakemod:stick_block",
-    "jakemod:pine_planks"
+    "jakemod:chorus_log",
+    "jakemod:stripped_chorus_log",
+    "jakemod:chorus_planks",
+    "jakemod:chorus_wood",
+    "jakemod:chorus_slab",
+    "jakemod:chorus_pressure_plate",
+    "jakemod:chorus_stairs",
+    "jakemod:chorus_fence",
+    "jakemod:chorus_fence_gate",
+    "jakemod:chorus_door",
+    "jakemod:chorus_trapdoor"
   ]
 }

@@ -5,19 +5,31 @@ import com.jake.jakemod.block.entity.ModBlockEntities;
 import com.jake.jakemod.item.ModItems;
 import com.jake.jakemod.loot.ModLootModifiers;
 import com.jake.jakemod.potion.ModPotions;
+import com.jake.jakemod.recipe.ModRecipes;
+import com.jake.jakemod.screen.KilnBlockScreen;
+import com.jake.jakemod.screen.ModMenuTypes;
 import com.jake.jakemod.sound.ModSounds;
 import com.jake.jakemod.util.BetterBrewingRecipe;
 import com.jake.jakemod.world.feature.ModConfiguredFeatures;
 import com.jake.jakemod.world.feature.ModPlacedFeatures;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.color.block.BlockColors;
+import net.minecraft.client.color.item.ItemColors;
+import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
+import net.minecraft.world.level.FoliageColor;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
+import net.minecraft.world.level.block.FlowerPotBlock;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -50,8 +62,11 @@ public class JakeMod
         ModPlacedFeatures.register(modEventBus);
         ModLootModifiers.register(modEventBus);
         ModPotions.register(modEventBus);
-        ModBlockEntities.register(modEventBus);
 
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::clientSetup);
@@ -60,17 +75,23 @@ public class JakeMod
     }
 
     private void clientSetup(final FMLClientSetupEvent event) {
-        //   ItemBlockRenderTypes.setRenderLayer(ModBlocks.COPPER_DOOR.get(), RenderType.translucent());
-    //    ItemBlockRenderTypes.setRenderLayer(ModBlocks.COPPER_TRAPDOOR.get(), RenderType.translucent());
-    //ItemBlockRenderTypes.setRenderLayer(ModBlocks.SOUL_GLASS.get(), RenderType.translucent());
-    //ItemBlockRenderTypes.setRenderLayer(ModBlocks.SOUL_GLASS_PANE.get(), RenderType.translucent());
+        BlockColors blockColors = Minecraft.getInstance().getBlockColors();
+        ItemColors itemColors = Minecraft.getInstance().getItemColors();
 
+        //Leaf Coloring
+        blockColors.register((state, world, pos, tintIndex) ->
+                        world != null && pos != null ? BiomeColors.getAverageFoliageColor(world, pos) : FoliageColor.getDefaultColor(),
+                ModBlocks.OAK_LEAF_CARPET.get());
+
+        //Grabs the color of the block and sets the item color to be the same
+        itemColors.register((stack, tintIndex) -> {
+                    BlockState BlockState = ((BlockItem)stack.getItem()).getBlock().defaultBlockState();
+                    return blockColors.getColor(BlockState, null, null, tintIndex); },
+                ModBlocks.OAK_LEAF_CARPET.get());
     }
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         event.enqueueWork(() -> {
-           // ComposterBlock.COMPOSTABLES;
-            //ComposterBlock.
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
                     Items.INK_SAC, ModPotions.BLINDNESS_POTION.get()));
 
@@ -80,10 +101,13 @@ public class JakeMod
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.MUNDANE,
                     Items.PHANTOM_MEMBRANE, ModPotions.LEVITATION_POTION.get()));
 
+            ComposterBlock.COMPOSTABLES.put(ModItems.MINT.get(), 0.65f);
+            ComposterBlock.COMPOSTABLES.put(ModItems.MINT_SEEDS.get(), 0.30F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.CYAN_ROSE.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(Items.POISONOUS_POTATO, 0.01F);
+
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CYAN_ROSE.getId(),ModBlocks.POTTED_CYAN_ROSE);
         });
-        // Some common setup code
-        LOGGER.info("HELLO FROM COMMON SETUP");
-        LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
     }
 
 
@@ -93,6 +117,7 @@ public class JakeMod
     {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            MenuScreens.register(ModMenuTypes.KILN_BLOCK_MENU.get(), KilnBlockScreen::new);
          }
     }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "jakemod:block/red_sandstone_bricks"
+  }
+}

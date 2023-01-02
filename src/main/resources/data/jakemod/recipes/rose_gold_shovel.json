@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "jakemod:rose_gold_ingot"
+    }
+  },
+  "pattern": [
+    " X ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "jakemod:rose_gold_shovel"
+  }
+}

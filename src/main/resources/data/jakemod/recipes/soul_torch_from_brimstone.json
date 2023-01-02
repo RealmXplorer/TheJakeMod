@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "tag": "minecraft:soul_fire_base_blocks"
+    },
+    "X": [
+      {
+        "item": "jakemod:brimstone"
+      }
+    ]
+  },
+  "pattern": [
+    "X",
+    "#",
+    "S"
+  ],
+  "result": {
+    "count": 8,
+    "item": "minecraft:soul_torch"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_glass_pane_post",
+  "render_type": "translucent",
+  "textures": {
+    "edge": "jakemod:block/end_glass_pane_top",
+    "pane": "jakemod:block/end_glass"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "jakemod:block/cut_soul_sandstone_slab"
+    },
+    "type=double": {
+      "model": "jakemod:block/cut_soul_sandstone"
+    },
+    "type=top": {
+      "model": "jakemod:block/cut_soul_sandstone_slab_top"
+    }
+  }
+}

@@ -38,6 +38,7 @@
     "jakemod:snow_bricks",
     "jakemod:snow_brick_stairs",
     "jakemod:snow_brick_slab",
-    "jakemod:snow_brick_wall"
+    "jakemod:snow_brick_wall",
+    "jakemod:end_sand"
   ]
 }

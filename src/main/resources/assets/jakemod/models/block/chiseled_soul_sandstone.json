@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "jakemod:block/soul_sandstone_top",
+    "side": "jakemod:block/chiseled_soul_sandstone"
+  }
+}

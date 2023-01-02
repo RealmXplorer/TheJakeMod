@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "minecraft:brown_mushroom"
+  },
+  {
+    "item": "minecraft:poisonous_potato"
+  },
+  {
+    "item": "minecraft:sugar"
+  }
+],
+
+  "result": {
+    "item": "minecraft:potato"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.2,
+"ingredient":
+  {
+    "item": "jakemod:soul_sandstone"
+  },
+
+  
+  "result": "jakemod:smooth_soul_sandstone"
+}

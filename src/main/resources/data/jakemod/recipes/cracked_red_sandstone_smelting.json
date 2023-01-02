@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.2,
+"ingredient":
+  {
+    "item": "minecraft:smooth_red_sandstone"
+  },
+
+  
+  "result": "jakemod:cracked_red_sandstone"
+}

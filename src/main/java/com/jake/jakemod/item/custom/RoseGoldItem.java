@@ -39,8 +39,6 @@ public class RoseGoldItem extends ArmorItem {
     public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity wearer){
         return true;
     }
-
-
     // public static boolean isWearingGold(LivingEntity p_234460_0_) {
      //   for(ItemStack itemstack : p_234460_0_.getArmorSlots()) {
        //     Item item = itemstack.getItem();

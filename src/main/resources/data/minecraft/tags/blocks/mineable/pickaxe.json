@@ -369,11 +369,20 @@
     "jakemod:rose_gold_block",
     "jakemod:steel_block",
 
+    "jakemod:cracked_sandstone",
+    "jakemod:cracked_red_sandstone",
+    "jakemod:cracked_soul_sandstone",
+
     "jakemod:sandstone_bricks",
     "jakemod:sandstone_brick_slab",
     "jakemod:sandstone_brick_stairs",
     "jakemod:sandstone_brick_wall",
 
+    "jakemod:red_sandstone_bricks",
+    "jakemod:red_sandstone_brick_slab",
+    "jakemod:red_sandstone_brick_stairs",
+    "jakemod:red_sandstone_brick_wall",
+    
     "jakemod:calcite_slab",
     "jakemod:calcite_stairs",
     "jakemod:calcite_wall",
@@ -424,6 +433,31 @@
     "jakemod:stone_tile_wall",
     "jakemod:steel_door",
     "jakemod:steel_trapdoor",
-    "jakemod:steel_bars"
+    "jakemod:steel_bars",
+
+    "jakemod:abysson_block",
+    "jakemod:abysson_ore",
+
+    "jakemod:soul_sandstone",
+    "jakemod:soul_sandstone_slab",
+    "jakemod:soul_sandstone_stairs",
+    "jakemod:soul_sandstone_wall",
+
+    "jakemod:soul_sandstone_bricks",
+    "jakemod:soul_sandstone_brick_slab",
+    "jakemod:soul_sandstone_brick_stairs",
+    "jakemod:soul_sandstone_brick_wall",
+
+    "jakemod:cut_soul_sandstone",
+    "jakemod:cut_soul_sandstone_slab",
+
+    "jakemod:chiseled_soul_sandstone",
+
+    "jakemod:purpur_wall",
+    "jakemod:grimstone",
+    "jakemod:nether_core",
+    "jakemod:smooth_soul_sandstone",
+    "jakemod:nether_brick_pillar",
+    "jakemod:blaze_bundle"
   ]
 }

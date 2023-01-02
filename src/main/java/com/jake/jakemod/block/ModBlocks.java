@@ -1,14 +1,16 @@
 package com.jake.jakemod.block;
 
 import com.jake.jakemod.JakeMod;
-//import com.jake.jakemod.block.custom.KilnBlock;
-import com.jake.jakemod.block.custom.SoulTntBlock;
+import com.jake.jakemod.block.custom.*;
+//import com.jake.jakemod.block.custom.KilnBlockOld;
+import com.jake.jakemod.block.custom.DirectionalBlock;
+import com.jake.jakemod.item.custom.AbyssonBlock;
 import com.jake.jakemod.item.custom.BrimstoneBlock;
-import com.jake.jakemod.block.custom.MintCropBlock;
-import com.jake.jakemod.block.custom.StickBlock;
 import com.jake.jakemod.item.ModItems;
 import com.jake.jakemod.item.custom.CharcoalBlock;
+import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -46,9 +48,16 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
 
 
-    //public static final RegistryObject<Block> KILN_BLOCK = registerBlock("kiln",
-      //      () -> new KilnBlock(BlockBehaviour.Properties.of(Material.METAL)
-        //            .strength(6f).requiresCorrectToolForDrops().noOcclusion()), CreativeModeTab.TAB_DECORATIONS);
+    public static final RegistryObject<Block> KILN_BLOCK = registerBlock("kiln_block",
+            () -> new KilnBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6f).requiresCorrectToolForDrops().noOcclusion()), CreativeModeTab.TAB_DECORATIONS);
+
+    //GRIMSTONE
+    public static final RegistryObject<Block> GRIMSTONE = registerBlock("grimstone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+//GRIMSTONE BRICKS
+    public static final RegistryObject<Block> GRIMSTONE_BRICKS = registerBlock("grimstone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(3f).requiresCorrectToolForDrops().sound(SoundType.NETHER_BRICKS)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     //POLISHED ANDESITE BRICKS
     public static final RegistryObject<Block> POLISHED_ANDESITE_BRICKS = registerBlock("polished_andesite_bricks",
@@ -81,7 +90,27 @@ public class ModBlocks {
     public static final RegistryObject<Block> POLISHED_DIORITE_BRICK_WALL = registerBlock("polished_diorite_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
 
+    //OAK LEAF CARPET
+    public static final RegistryObject<Block> OAK_LEAF_CARPET = registerBlock("oak_leaf_carpet",
+            () -> new CarpetBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).strength(0f).sound(SoundType.GRASS)), CreativeModeTab.TAB_DECORATIONS);
 
+
+    //CRACKED SANDSTONE
+    public static final RegistryObject<Block> CRACKED_SANDSTONE = registerBlock("cracked_sandstone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(1f).requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //CRACKED RED SANDSTONE
+    public static final RegistryObject<Block> CRACKED_RED_SANDSTONE = registerBlock("cracked_red_sandstone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(1f).requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //CRACKED SOUL SANDSTONE
+    public static final RegistryObject<Block> CRACKED_SOUL_SANDSTONE = registerBlock("cracked_soul_sandstone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(1f).requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //SANDSTONE BRICKS
     public static final RegistryObject<Block> SANDSTONE_BRICKS = registerBlock("sandstone_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(.5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
     //SANDSTONE BRICK STAIRS
@@ -94,6 +123,21 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
     //SANDSTONE BRICK WALLS
     public static final RegistryObject<Block> SANDSTONE_BRICK_WALL = registerBlock("sandstone_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
+
+    //RED SANDSTONE BRICKS
+    public static final RegistryObject<Block> RED_SANDSTONE_BRICKS = registerBlock("red_sandstone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(.5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //RED SANDSTONE BRICK STAIRS
+    public static final RegistryObject<Block> RED_SANDSTONE_BRICK_STAIRS = registerBlock("red_sandstone_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.RED_SANDSTONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //RED SANDSTONE BRICK SLABS
+    public static final RegistryObject<Block> RED_SANDSTONE_BRICK_SLAB = registerBlock("red_sandstone_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //RED SANDSTONE BRICK WALLS
+    public static final RegistryObject<Block> RED_SANDSTONE_BRICK_WALL = registerBlock("red_sandstone_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
 
 
@@ -137,15 +181,93 @@ public class ModBlocks {
                     .strength(6f).requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
-    //SOULSAND STONE
-   // public static final RegistryObject<Block> SOUL_SANDSTONE = registerBlock("soul_sandstone",
-     //       () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-       //             .strength(1f).requiresCorrectToolForDrops()
-         //           .sound(SoundType.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    //CHISELED SOUL SANDSTONE
+    public static final RegistryObject<Block> CHISELED_SOUL_SANDSTONE = registerBlock("chiseled_soul_sandstone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(1f).requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //CUT SOUL SANDSTONE
+    public static final RegistryObject<Block> CUT_SOUL_SANDSTONE = registerBlock("cut_soul_sandstone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(1f).requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //CUT SOUL SANDSTONE SLABS
+    public static final RegistryObject<Block> CUT_SOUL_SANDSTONE_SLAB = registerBlock("cut_soul_sandstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.STONE)
+                    .strength(1f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    //SOUL SANDSTONE
+    public static final RegistryObject<Block> SOUL_SANDSTONE = registerBlock("soul_sandstone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(1f).requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //SOUL SANDSTONE STAIRS
+    public static final RegistryObject<Block> SOUL_SANDSTONE_STAIRS = registerBlock("soul_sandstone_stairs",
+            () -> new StairBlock(() -> ModBlocks.SOUL_SANDSTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .sound(SoundType.STONE)
+                            .strength(1f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //SOUL SANDSTONE SLABS
+    public static final RegistryObject<Block> SOUL_SANDSTONE_SLAB = registerBlock("soul_sandstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.STONE)
+                    .strength(1f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //SOUL SANDSTONE WALLS
+    public static final RegistryObject<Block> SOUL_SANDSTONE_WALL = registerBlock("soul_sandstone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.STONE).strength(1f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
+
+    //SMOOTH SOUL SANDSTONE
+    public static final RegistryObject<Block> SMOOTH_SOUL_SANDSTONE = registerBlock("smooth_soul_sandstone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(1f).requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //SMOOTH SOUL SANDSTONE STAIRS
+    public static final RegistryObject<Block> SMOOTH_SOUL_SANDSTONE_STAIRS = registerBlock("smooth_soul_sandstone_stairs",
+            () -> new StairBlock(() -> ModBlocks.SOUL_SANDSTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .sound(SoundType.STONE)
+                            .strength(1f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //SMOOTH SOUL SANDSTONE SLABS
+    public static final RegistryObject<Block> SMOOTH_SOUL_SANDSTONE_SLAB = registerBlock("smooth_soul_sandstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.STONE)
+                    .strength(1f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+
+    //SOUL SANDSTONE BRICKS
+    public static final RegistryObject<Block> SOUL_SANDSTONE_BRICKS = registerBlock("soul_sandstone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(1f).requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //SOUL SANDSTONE BRICK STAIRS
+    public static final RegistryObject<Block> SOUL_SANDSTONE_BRICK_STAIRS = registerBlock("soul_sandstone_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.SOUL_SANDSTONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .sound(SoundType.STONE)
+                            .strength(1f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //SOUL SANDSTONE BRICK SLABS
+    public static final RegistryObject<Block> SOUL_SANDSTONE_BRICK_SLAB = registerBlock("soul_sandstone_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.STONE)
+                    .strength(1f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //SOUL SANDSTONE BRICK WALLS
+    public static final RegistryObject<Block> SOUL_SANDSTONE_BRICK_WALL = registerBlock("soul_sandstone_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.STONE).strength(1f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
+
+
+    //PURPUR WALLS
+    public static final RegistryObject<Block> PURPUR_WALL = registerBlock("purpur_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
+
 
     //BRIMSTONE BLOCK
     public static final RegistryObject<Block> BRIMSTONE_BLOCK = registerBlock("brimstone_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .strength(6f).requiresCorrectToolForDrops()
                     .sound(SoundType.BASALT)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
@@ -154,10 +276,10 @@ public class ModBlocks {
                     .strength(2f).requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
-    //public static final RegistryObject<Block> KILN = registerBlock("kiln",
-      //      () -> new KilnBlock(BlockBehaviour.Properties.of(Material.STONE)
-        //            .strength(6f).requiresCorrectToolForDrops()
-          //          .sound(SoundType.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> BLAZE_BUNDLE = registerBlock("blaze_bundle",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     //ZIRCON BLOCK
     //public static final RegistryObject<Block> ZIRCON_BLOCK = registerBlock("zircon_block",
@@ -191,7 +313,15 @@ public class ModBlocks {
                     .strength(4f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.NETHER_GOLD_ORE),
-                    UniformInt.of(3,7)),
+                    UniformInt.of(2,4)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> ABYSSON_ORE = registerBlock("abysson_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE),
+                    UniformInt.of(2,4)),
             CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     //DEEPSLATE RUBY ORE
@@ -396,13 +526,96 @@ public class ModBlocks {
                     .sound(SoundType.CALCITE)), CreativeModeTab.TAB_DECORATIONS);
 
 
-    //PINE PLANKS?
-    public static final RegistryObject<Block> PINE_PLANKS = registerBlock("pine_planks",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)
-                    .strength(5f)
+    //NETHER BRICK PILLAR
+    public static final RegistryObject<Block> NETHER_BRICK_PILLAR = registerBlock("nether_brick_pillar",
+            () -> new DirectionalBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f)
+                    .sound(SoundType.NETHER_BRICKS)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    //CHORUS LOG
+    public static final RegistryObject<Block> CHORUS_LOG = registerBlock("chorus_log",
+            () -> new ChorusLogBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
+                    .strength(2f)
                     .sound(SoundType.WOOD)),
             CreativeModeTab.TAB_BUILDING_BLOCKS);
 
+    public static final RegistryObject<Block> STRIPPED_CHORUS_LOG = registerBlock("stripped_chorus_log",
+            () -> new DirectionalBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
+                    .strength(2f)
+                    .sound(SoundType.WOOD)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    //END SAND
+    public static final RegistryObject<Block> END_SAND = registerBlock("end_sand",
+            () -> new SandBlock(3, BlockBehaviour.Properties.of(Material.SAND)
+                    .strength(1f)
+                    .sound(SoundType.SAND)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    //CHORUS WOOD
+    public static final RegistryObject<Block> CHORUS_WOOD = registerBlock("chorus_wood",
+            () -> new DirectionalBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(2f)
+                    .sound(SoundType.WOOD)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    //CHORUS PLANKS
+    public static final RegistryObject<Block> CHORUS_PLANKS = registerBlock("chorus_planks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(2f)
+                    .sound(SoundType.WOOD)),
+            CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //CHORUS PLANKS
+    public static final RegistryObject<Block> CHORUS_PRESSURE_PLATE = registerBlock("chorus_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(1f)
+                    .sound(SoundType.WOOD)),
+            CreativeModeTab.TAB_REDSTONE);
+
+    //CHORUS STAIRS
+    public static final RegistryObject<Block> CHORUS_STAIRS = registerBlock("chorus_stairs",
+            () -> new StairBlock(() -> ModBlocks.CHORUS_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.WOOD)
+                            .sound(SoundType.WOOD)
+                            .strength(2f)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    //CHORUS SLABS
+    public static final RegistryObject<Block> CHORUS_SLAB = registerBlock("chorus_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD)
+                    .strength(2f)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    //CHORUS FENCE POST
+    public static final RegistryObject<Block> CHORUS_FENCE = registerBlock("chorus_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD)
+                    .strength(2f)), CreativeModeTab.TAB_DECORATIONS);
+    //CHORUS FENCE GATE
+    public static final RegistryObject<Block> CHORUS_FENCE_GATE = registerBlock("chorus_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD)
+                    .strength(2f)), CreativeModeTab.TAB_DECORATIONS);
+
+    //CHORUS DOOR
+    public static final RegistryObject<Block> CHORUS_DOOR = registerBlock("chorus_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(2f)
+                    .noOcclusion().sound(SoundType.WOOD)), CreativeModeTab.TAB_REDSTONE);
+    //CHORUS TRAPDOOR
+    public static final RegistryObject<Block> CHORUS_TRAPDOOR = registerBlock("chorus_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(2f)
+                    .noOcclusion().sound(SoundType.WOOD)), CreativeModeTab.TAB_REDSTONE);
+    //CHORUS BUTTON
+    public static final RegistryObject<Block> CHORUS_BUTTON = registerBlock("chorus_button",
+            () -> new WoodButtonBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(2f).requiresCorrectToolForDrops()
+                    .noCollission()), CreativeModeTab.TAB_REDSTONE);
+
+    //public static final RegistryObject<Block> void_lantern = registerBlock("void_lantern",
+      //      () -> new LanternBlock(BlockBehaviour.Properties.of(Material.METAL)
+        //            .strength(2f)
+          //          .noOcclusion().sound(SoundType.LANTERN)), CreativeModeTab.TAB_DECORATIONS);
     //SNOW BRICKS
     public static final RegistryObject<Block> SNOW_BRICKS = registerBlock("snow_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
@@ -514,7 +727,25 @@ public class ModBlocks {
                     .noOcclusion()
                     .sound(SoundType.GLASS)
             ),
+            CreativeModeTab.TAB_DECORATIONS);
+
+    //END GLASS
+    public static final RegistryObject<Block> END_GLASS = registerBlock("end_glass",
+            () -> new GlassBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .noOcclusion()
+                    .strength(.5f)
+                    .sound(SoundType.GLASS)
+            ),
             CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> END_GLASS_PANE = registerBlock("end_glass_pane",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(.5f)
+                    .noOcclusion()
+                    .sound(SoundType.GLASS)
+            ),
+            CreativeModeTab.TAB_DECORATIONS);
+
     //COPPER BUTTON
     //public static final RegistryObject<Block> COPPER_BUTTON = registerBlock("copper_button",
     //        () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE)
@@ -554,13 +785,34 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SOUL_TNT = registerBlock("soul_tnt",
             () -> new SoulTntBlock(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(1f)
+                    .strength(0f)
                     .noOcclusion().sound(SoundType.SOUL_SAND)), CreativeModeTab.TAB_REDSTONE);
+
+    public static final RegistryObject<Block> NETHER_CORE = registerBlock("nether_core",
+            () -> new SoulTntBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(5f)
+                    .noOcclusion().sound(SoundType.METAL)), CreativeModeTab.TAB_DECORATIONS);
 
     //public static final RegistryObject<Block> BLACKSTONE_CUTTER = registerBlock("blackstone_cutter",
       //      () -> new StonecutterBlock(BlockBehaviour.Properties.of(Material.STONE)
         //            .strength(1f)
           //          .noOcclusion().sound(SoundType.STONE)), CreativeModeTab.TAB_DECORATIONS);
+
+
+    //CYAN ROSE
+    public static final RegistryObject<Block> CYAN_ROSE = registerBlock("cyan_rose",
+            () -> new FlowerBlock(MobEffects.LEVITATION, 8, BlockBehaviour.Properties.copy(Blocks.DANDELION)
+                    .strength(0f)
+                    .noOcclusion().sound(SoundType.GRASS)), CreativeModeTab.TAB_DECORATIONS);
+    //POTTED CYAN ROSE
+    public static final RegistryObject<Block> POTTED_CYAN_ROSE = registerBlockWithoutBlockItem("potted_cyan_rose",
+            () -> new FlowerPotBlock(null,ModBlocks.CYAN_ROSE, BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION)
+                    .strength(0f)
+                    .noOcclusion().sound(SoundType.STONE)));
+
+    private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
+        return BLOCKS.register(name, block);
+    }
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block,
                                                                     CreativeModeTab tab) {
@@ -569,11 +821,15 @@ public class ModBlocks {
         return toReturn;
     }
 
+
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab){
         if (name.equals("brimstone_block"))
             return ModItems.ITEMS.register(name,() -> new BrimstoneBlock(block.get(), new Item.Properties().tab(tab)));
         else if(name.equals("charcoal_block"))
             return ModItems.ITEMS.register(name,() -> new CharcoalBlock(block.get(), new Item.Properties().tab(tab)));
+        else if(name.equals("abysson_block"))
+            return ModItems.ITEMS.register(name,() -> new AbyssonBlock(block.get(), new Item.Properties().tab(tab)));
+
         else
             return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
     }

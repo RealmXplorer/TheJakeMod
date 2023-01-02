@@ -30,12 +30,16 @@
     "jakemod:polished_tuff_brick_wall",
     "jakemod:snow_brick_wall",
     "jakemod:sandstone_brick_wall",
+    "jakemod:red_sandstone_brick_wall",
     "jakemod:calcite_wall",
     "jakemod:polished_calcite_brick_wall",
     "jakemod:smooth_basalt_wall",
     "jakemod:polished_dripstone_brick_wall",
     "jakemod:dripstone_wall",
     "jakemod:basalt_brick_wall",
-    "jakemod:stone_tile_wall"
+    "jakemod:stone_tile_wall",
+    "jakemod:soul_sandstone_wall",
+    "jakemod:soul_sandstone_brick_wall",
+    "jakemod:purpur_wall"
   ]
 }

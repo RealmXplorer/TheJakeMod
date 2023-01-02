@@ -1,0 +1,9 @@
+{
+  "replace": "false",
+  "values": [
+    "minecraft:shears",
+    "jakemod:gold_shears",
+    "jakemod:diamond_shears",
+    "jakemod:netherite_shears"
+  ]
+}

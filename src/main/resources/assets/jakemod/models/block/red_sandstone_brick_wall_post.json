@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "jakemod:block/red_sandstone_bricks"
+  }
+}

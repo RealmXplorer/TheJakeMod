@@ -1,0 +1,4 @@
+{
+  "parent": "jakemod:block/end_glass",
+  "render_type": "translucent"
+}

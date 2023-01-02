@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "jakemod:soul_sandstone"
+  },
+  "result": "jakemod:soul_sandstone_wall"
+}

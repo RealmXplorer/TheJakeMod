@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "jakemod:end_glass"
+    }
+  },
+  "result": {
+    "count": 16,
+    "item": "jakemod:end_glass_pane"
+  }
+}

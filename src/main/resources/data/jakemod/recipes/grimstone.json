@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "@#@",
+    "#X#",
+    "@#@"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:end_stone"
+    },
+    "#": {
+      "item": "jakemod:abysson"
+    },
+    "@": {
+      "item": "minecraft:popped_chorus_fruit"
+    }
+  },
+  "result": {
+    "item": "jakemod:grimstone"
+  }
+}

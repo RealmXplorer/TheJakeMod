@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "jakemod:chorus_planks"
+  }
+],
+
+  "result": {
+    "item": "jakemod:chorus_button"
+  }
+}

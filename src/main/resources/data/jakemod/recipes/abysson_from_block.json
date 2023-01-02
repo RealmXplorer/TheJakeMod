@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "jakemod:abysson_block"
+  }
+],
+
+  "result": {
+    "item": "jakemod:abysson",
+    "count": 9
+  }
+}
