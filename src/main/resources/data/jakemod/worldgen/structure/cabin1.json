@@ -13,9 +13,9 @@
  "step": "underground_structures",
 
  "start_height": {
-    "max_inclusive": { "below_top": 10 },
-    "min_inclusive": { "above_bottom": 3 }
+ "absolute": -80
   },
+
 
 "project_start_to_heightmap": "WORLD_SURFACE_WG",
 
