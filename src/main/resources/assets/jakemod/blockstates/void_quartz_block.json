@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "jakemod:block/void_quartz_block"
+    }
+  }
+}

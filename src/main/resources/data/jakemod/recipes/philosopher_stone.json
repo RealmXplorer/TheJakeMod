@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "g": {
-      "item": "minecraft:gold_ingot"
+      "item": "minecraft:gold_block"
     },
     "r": {
       "item": "jakemod:ruby"
     },
     "a": {
-      "item": "minecraft:amethyst_shard"
+      "item": "jakemod:compact_amethyst_block"
     }
   },
   "pattern": [

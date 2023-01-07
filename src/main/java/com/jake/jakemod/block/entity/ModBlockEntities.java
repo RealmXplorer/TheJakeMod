@@ -4,6 +4,8 @@ import com.jake.jakemod.JakeMod;
 import com.jake.jakemod.block.ModBlocks;
 //import com.jake.jakemod.block.custom.KilnBlock;
 //import com.jake.jakemod.block.entity.custom.KilnBlockEntity;
+import net.minecraft.world.item.crafting.AbstractCookingRecipe;
+import net.minecraft.world.level.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

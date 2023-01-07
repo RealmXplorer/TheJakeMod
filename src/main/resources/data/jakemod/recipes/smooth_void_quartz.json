@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "jakemod:void_quartz_block"
+  },
+  "result": "jakemod:smooth_void_quartz"
+}

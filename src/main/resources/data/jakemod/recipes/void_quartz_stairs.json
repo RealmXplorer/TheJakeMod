@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": [
+      {
+        "item": "jakemod:chiseled_void_quartz_block"
+      },
+      {
+        "item": "jakemod:void_quartz_block"
+      },
+      {
+        "item": "jakemod:void_quartz_pillar"
+      }
+    ]
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "item": "jakemod:void_quartz_stairs"
+  }
+}

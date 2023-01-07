@@ -29,7 +29,7 @@ public enum ModArmorMaterials implements ArmorMaterial{
     ROSE_QUARTZ("rose_quartz", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
         return Ingredient.of(ModItems.ROSE_QUARTZ.get());
     }),
-    CROWN("crown", 7, new int[]{1, 3, 5, 2}, 22, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> {
+    CROWN("crown", 7, new int[]{4, 3, 5, 2}, 22, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> {
         return Ingredient.of(ModItems.RUBY.get());
     }),
     STEEL("steel", 20, new int[]{3, 5, 6, 3}, 9, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.25F, 0.05F, () -> {

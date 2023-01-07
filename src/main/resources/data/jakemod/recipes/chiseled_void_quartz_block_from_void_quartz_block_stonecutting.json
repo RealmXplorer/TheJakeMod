@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "jakemod:void_quartz_block"
+  },
+  "result": "jakemod:chiseled_void_quartz_block"
+}

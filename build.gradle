@@ -5,7 +5,7 @@ plugins {
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
 }
 
-version = '1.6-1.19.2'
+version = '1.7.1-1.19.2'
 group = 'com.jake.jakemod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'jakemod'
 
@@ -165,11 +165,11 @@ jar {
     manifest {
         attributes([
                 "Specification-Title"     : "jakemod",
-                "Specification-Vendor"    : "jakemodsareus",
-                "Specification-Version"   : "1.6", // We are version 1 of ourselves
+                "Specification-Vendor"    : "duelstudios",
+                "Specification-Version"   : "1.7.1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
-                "Implementation-Vendor"   : "jakemodsareus",
+                "Implementation-Vendor"   : "duelstudios",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }

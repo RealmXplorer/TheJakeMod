@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "jakemod:abysson"
+  },
+  "base": {
+    "item": "minecraft:quartz"
+  },
+  "result": {
+    "item": "jakemod:void_quartz"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "jakemod:block/glass_slab"
+    },
+    "type=double": {
+      "model": "jakemod:block/glass_slab_full"
+    },
+    "type=top": {
+      "model": "jakemod:block/glass_slab_top"
+    }
+  }
+}

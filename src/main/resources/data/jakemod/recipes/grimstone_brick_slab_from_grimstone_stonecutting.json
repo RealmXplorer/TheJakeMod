@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "jakemod:grimstone"
+  },
+  "result": "jakemod:grimstone_brick_slab"
+}

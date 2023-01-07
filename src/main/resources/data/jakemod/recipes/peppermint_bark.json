@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "jake_mod:candy_cane"
+    },
+    "#": {
+      "item": "jake_mod:chocolate_bar"
+    }
+  },
+  "result": {
+    "item": "jake_mod:peppermint_bark"
+  }
+}

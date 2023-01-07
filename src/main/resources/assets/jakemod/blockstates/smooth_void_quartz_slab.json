@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "jakemod:block/smooth_void_quartz_slab"
+    },
+    "type=double": {
+      "model": "jakemod:block/smooth_void_quartz"
+    },
+    "type=top": {
+      "model": "jakemod:block/smooth_void_quartz_slab_top"
+    }
+  }
+}

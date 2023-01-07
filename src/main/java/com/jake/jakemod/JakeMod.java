@@ -6,7 +6,7 @@ import com.jake.jakemod.item.ModItems;
 import com.jake.jakemod.loot.ModLootModifiers;
 import com.jake.jakemod.potion.ModPotions;
 import com.jake.jakemod.recipe.ModRecipes;
-import com.jake.jakemod.screen.KilnBlockScreen;
+//import com.jake.jakemod.screen.KilnBlockScreen;
 import com.jake.jakemod.screen.ModMenuTypes;
 import com.jake.jakemod.sound.ModSounds;
 import com.jake.jakemod.util.BetterBrewingRecipe;
@@ -25,11 +25,13 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
+//import net.minecraft.world.level.FoliageColor;
 import net.minecraft.world.level.FoliageColor;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.ForgeMod;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -75,19 +77,29 @@ public class JakeMod
     }
 
     private void clientSetup(final FMLClientSetupEvent event) {
-        BlockColors blockColors = Minecraft.getInstance().getBlockColors();
-        ItemColors itemColors = Minecraft.getInstance().getItemColors();
-
-        //Leaf Coloring
-        blockColors.register((state, world, pos, tintIndex) ->
-                        world != null && pos != null ? BiomeColors.getAverageFoliageColor(world, pos) : FoliageColor.getDefaultColor(),
-                ModBlocks.OAK_LEAF_CARPET.get());
-
-        //Grabs the color of the block and sets the item color to be the same
-        itemColors.register((stack, tintIndex) -> {
-                    BlockState BlockState = ((BlockItem)stack.getItem()).getBlock().defaultBlockState();
-                    return blockColors.getColor(BlockState, null, null, tintIndex); },
-                ModBlocks.OAK_LEAF_CARPET.get());
+//        BlockColors blockColors = Minecraft.getInstance().getBlockColors();
+//        ItemColors itemColors = Minecraft.getInstance().getItemColors();
+//
+//        //Leaf Coloring
+//        blockColors.register((state, world, pos, tintIndex) ->
+//                        world != null && pos != null ? BiomeColors.getAverageFoliageColor(world, pos) : FoliageColor.getDefaultColor(),
+//                ModBlocks.OAK_LEAF_CARPET.get());
+//
+//        //Grabs the color of the block and sets the item color to be the same
+//        itemColors.register((stack, tintIndex) -> {
+//                    BlockState BlockState = ((BlockItem)stack.getItem()).getBlock().defaultBlockState();
+//                    return blockColors.getColor(BlockState, null, null, tintIndex); },
+//                ModBlocks.OAK_LEAF_CARPET.get());
+//        //Birch Leaf Coloring
+//        blockColors.register((p92631, p92632, p92633, p92634) -> {
+//            return FoliageColor.getBirchColor();
+//        }, ModBlocks.BIRCH_LEAF_CARPET.get());
+//
+//        //Grabs the color of the block and sets the item color to be the same
+//        itemColors.register((stack, tintIndex) -> { //Change to event.register for 1.19.3
+//                    BlockState BlockState = ((BlockItem)stack.getItem()).getBlock().defaultBlockState();
+//                    return blockColors.getColor(BlockState, null, null, tintIndex); },
+//                ModBlocks.BIRCH_LEAF_CARPET.get());
     }
     private void commonSetup(final FMLCommonSetupEvent event)
     {
@@ -102,11 +114,15 @@ public class JakeMod
                     Items.PHANTOM_MEMBRANE, ModPotions.LEVITATION_POTION.get()));
 
             ComposterBlock.COMPOSTABLES.put(ModItems.MINT.get(), 0.65f);
+            ComposterBlock.COMPOSTABLES.put(ModItems.GHAST_BERRY.get(), 0.85f);
             ComposterBlock.COMPOSTABLES.put(ModItems.MINT_SEEDS.get(), 0.30F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.CYAN_ROSE.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.RED_ROSE.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(Items.POISONOUS_POTATO, 0.01F);
 
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CYAN_ROSE.getId(),ModBlocks.POTTED_CYAN_ROSE);
+
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.RED_ROSE.getId(),ModBlocks.POTTED_RED_ROSE);
         });
     }
 
@@ -117,7 +133,80 @@ public class JakeMod
     {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            MenuScreens.register(ModMenuTypes.KILN_BLOCK_MENU.get(), KilnBlockScreen::new);
+//            MenuScreens.register(ModMenuTypes.KILN_BLOCK_MENU.get(), KilnBlockScreen::new);
+            BlockColors blockColors = Minecraft.getInstance().getBlockColors();
+            ItemColors itemColors = Minecraft.getInstance().getItemColors();
+
+            //Leaf Coloring
+            blockColors.register((state, world, pos, tintIndex) ->
+                            world != null && pos != null ? BiomeColors.getAverageFoliageColor(world, pos) : FoliageColor.getDefaultColor(),
+                    ModBlocks.OAK_LEAF_CARPET.get());
+            //Grabs the color of the block and sets the item color to be the same
+            itemColors.register((stack, tintIndex) -> {
+                        BlockState BlockState = ((BlockItem)stack.getItem()).getBlock().defaultBlockState();
+                        return blockColors.getColor(BlockState, null, null, tintIndex); },
+                    ModBlocks.OAK_LEAF_CARPET.get());
+
+
+            //Birch Leaf Coloring
+            blockColors.register((p92631, p92632, p92633, p92634) -> {
+                return FoliageColor.getBirchColor();
+            }, ModBlocks.BIRCH_LEAF_CARPET.get());
+            //Grabs the color of the block and sets the item color to be the same
+            itemColors.register((stack, tintIndex) -> { //Change to event.register for 1.19.3
+                        BlockState BlockState = ((BlockItem)stack.getItem()).getBlock().defaultBlockState();
+                        return blockColors.getColor(BlockState, null, null, tintIndex); },
+                    ModBlocks.BIRCH_LEAF_CARPET.get());
+
+            //Acacia Leaf Coloring
+            blockColors.register((state, world, pos, tintIndex) ->
+                            world != null && pos != null ? BiomeColors.getAverageFoliageColor(world, pos) : FoliageColor.getDefaultColor(),
+                    ModBlocks.ACACIA_LEAF_CARPET.get());
+            //Grabs the color of the block and sets the item color to be the same
+            itemColors.register((stack, tintIndex) -> {
+                        BlockState BlockState = ((BlockItem)stack.getItem()).getBlock().defaultBlockState();
+                        return blockColors.getColor(BlockState, null, null, tintIndex); },
+                    ModBlocks.ACACIA_LEAF_CARPET.get());
+
+            //SPRUCE Leaf Coloring
+            blockColors.register((p92631, p92632, p92633, p92634) -> {
+                return FoliageColor.getEvergreenColor();
+            }, ModBlocks.SPRUCE_LEAF_CARPET.get());
+            //Grabs the color of the block and sets the item color to be the same
+            itemColors.register((stack, tintIndex) -> { //Change to event.register for 1.19.3
+                        BlockState BlockState = ((BlockItem)stack.getItem()).getBlock().defaultBlockState();
+                        return blockColors.getColor(BlockState, null, null, tintIndex); },
+                    ModBlocks.SPRUCE_LEAF_CARPET.get());
+
+            //DARK OAK Leaf Coloring
+            blockColors.register((p92631, p92632, p92633, p92634) -> {
+                return FoliageColor.getDefaultColor();
+            }, ModBlocks.DARK_OAK_LEAF_CARPET.get());
+            //Grabs the color of the block and sets the item color to be the same
+            itemColors.register((stack, tintIndex) -> { //Change to event.register for 1.19.3
+                        BlockState BlockState = ((BlockItem)stack.getItem()).getBlock().defaultBlockState();
+                        return blockColors.getColor(BlockState, null, null, tintIndex); },
+                    ModBlocks.DARK_OAK_LEAF_CARPET.get());
+
+            //JUNGLE Leaf Coloring
+            blockColors.register((p92631, p92632, p92633, p92634) -> {
+                return FoliageColor.getDefaultColor();
+            }, ModBlocks.JUNGLE_LEAF_CARPET.get());
+            //Grabs the color of the block and sets the item color to be the same
+            itemColors.register((stack, tintIndex) -> { //Change to event.register for 1.19.3
+                        BlockState BlockState = ((BlockItem)stack.getItem()).getBlock().defaultBlockState();
+                        return blockColors.getColor(BlockState, null, null, tintIndex); },
+                    ModBlocks.JUNGLE_LEAF_CARPET.get());
+
+            //MANGROVE Leaf Coloring
+            blockColors.register((p92631, p92632, p92633, p92634) -> {
+                return FoliageColor.getMangroveColor();
+            }, ModBlocks.MANGROVE_LEAF_CARPET.get());
+            //Grabs the color of the block and sets the item color to be the same
+            itemColors.register((stack, tintIndex) -> { //Change to event.register for 1.19.3
+                        BlockState BlockState = ((BlockItem)stack.getItem()).getBlock().defaultBlockState();
+                        return blockColors.getColor(BlockState, null, null, tintIndex); },
+                    ModBlocks.MANGROVE_LEAF_CARPET.get());
          }
     }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "jakemod:block/chiseled_void_quartz_block"
+  }
+}

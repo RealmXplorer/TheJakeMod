@@ -1,0 +1,7 @@
+
+{
+  "type": "forge:add_features",
+  "biomes": "#jakemod:has_acacia_trees",
+  "features": "jakemod:add_acacia_carpet",
+  "step": "vegetal_decoration"
+}

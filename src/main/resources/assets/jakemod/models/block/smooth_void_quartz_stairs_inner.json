@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "jakemod:block/void_quartz_block_bottom",
+    "side": "jakemod:block/void_quartz_block_bottom",
+    "top": "jakemod:block/void_quartz_block_bottom"
+  }
+}

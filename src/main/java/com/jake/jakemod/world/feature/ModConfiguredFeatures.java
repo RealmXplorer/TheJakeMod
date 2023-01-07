@@ -55,11 +55,10 @@ public class ModConfiguredFeatures {
                     new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                             new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CYAN_ROSE.get()))))));
 
-    public static final RegistryObject<ConfiguredFeature<?, ?>> OAK_CARPET = CONFIGURED_FEATURES.register("oak_carpet",
+    public static final RegistryObject<ConfiguredFeature<?, ?>> RED_ROSE = CONFIGURED_FEATURES.register("red_rose",
             () -> new ConfiguredFeature<>(Feature.FLOWER,
-                    new RandomPatchConfiguration(100, 1, 1, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
-                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.OAK_LEAF_CARPET.get()))))));
-
+                    new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.RED_ROSE.get()))))));
     public static void register(IEventBus eventBus) {
         CONFIGURED_FEATURES.register(eventBus);
     }

@@ -13,6 +13,6 @@ public class AbyssonBlock extends BlockItem {
 
     @Override
     public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
-        return 2000;
+        return 20000;
     }
 }

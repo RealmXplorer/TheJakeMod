@@ -1,0 +1,7 @@
+
+{
+  "type": "forge:add_features",
+  "biomes": "#jakemod:has_birch_trees",
+  "features": "jakemod:add_birch_carpet",
+  "step": "vegetal_decoration"
+}

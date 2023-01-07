@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "jakemod:void_quartz_block"
+  }
+],
+
+  "result": {
+    "item": "jakemod:void_quartz",
+    "count": 4
+  }
+}

@@ -1,0 +1,17 @@
+{
+"structures": [
+    {
+      "structure": "jakemod:fallen_log1",
+      "weight": 3
+    }
+  ],
+  "placement": {
+"salt": 1642477574,
+
+"spacing": 5,
+
+"separation": 3,
+
+    "type": "minecraft:random_spread"
+  }
+}

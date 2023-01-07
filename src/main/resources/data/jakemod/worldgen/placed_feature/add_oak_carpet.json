@@ -1,10 +1,10 @@
 
 {
-  "feature": "jakemod:oak_carpet_placed",
+  "feature": "jakemod:oak_leaf_carpet",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 10
+      "chance": 2
     },
     {
       "type": "minecraft:in_square"
@@ -25,7 +25,7 @@
       "predicate": {
         "type": "minecraft:would_survive",
         "state": {
-          "Name": "jakemod:block/oak_leaf_carpet"
+          "Name": "jakemod:oak_leaf_carpet"
         }
       }
     }

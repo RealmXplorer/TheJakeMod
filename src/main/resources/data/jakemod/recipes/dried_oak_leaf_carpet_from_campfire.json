@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "cookingtime": 100,
+  "experience": 0.05,
+  "ingredient": {
+    "item": "jakemod:oak_leaf_carpet"
+  },
+  "result": "jakemod:dried_oak_leaf_carpet"
+}

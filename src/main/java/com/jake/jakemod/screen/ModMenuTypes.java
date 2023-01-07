@@ -15,8 +15,8 @@ public class ModMenuTypes {
             DeferredRegister.create(ForgeRegistries.MENU_TYPES, JakeMod.MOD_ID);
 
 
-    public static final RegistryObject<MenuType<KilnBlockMenu>> KILN_BLOCK_MENU =
-            registerMenuType(KilnBlockMenu::new, "kiln_block_menu");
+//    public static final RegistryObject<MenuType<KilnBlockMenu>> KILN_BLOCK_MENU =
+//            registerMenuType(KilnBlockMenu::new, "kiln_block_menu");
 
 
 

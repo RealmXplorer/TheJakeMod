@@ -1,0 +1,7 @@
+{
+  "parent": "jakemod:block/leaf_carpet",
+  "render_type": "cutout",
+  "textures": {
+    "all": "minecraft:block/acacia_leaves"
+  }
+}

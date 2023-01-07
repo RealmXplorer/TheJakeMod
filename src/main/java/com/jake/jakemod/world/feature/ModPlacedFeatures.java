@@ -38,10 +38,9 @@ public class ModPlacedFeatures {
             () -> new PlacedFeature(ModConfiguredFeatures.CYAN_ROSE.getHolder().get(), List.of(RarityFilter.onAverageOnceEvery(16),
                     InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
 
-    public static final RegistryObject<PlacedFeature> OAK_CARPET_PLACED = PLACED_FEATURES.register("oak_carpet_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.OAK_CARPET.getHolder().get(), List.of(RarityFilter.onAverageOnceEvery(2),
+    public static final RegistryObject<PlacedFeature> RED_ROSE_PLACED = PLACED_FEATURES.register("red_rose_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.RED_ROSE.getHolder().get(), List.of(RarityFilter.onAverageOnceEvery(16),
                     InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
-
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {
         return List.of(p_195347_, InSquarePlacement.spread(), p_195348_, BiomeFilter.biome());
     }

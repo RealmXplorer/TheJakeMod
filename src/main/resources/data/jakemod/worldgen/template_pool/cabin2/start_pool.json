@@ -1,0 +1,32 @@
+{
+
+
+
+  "name": "jakemod:cabin1/start_pool",
+
+
+  "fallback": "minecraft:empty",
+
+
+  "elements": [
+    {
+
+
+      "weight": 1,
+      "element": {
+
+
+        "location": "jakemod:cabin2",
+
+
+        "processors": "minecraft:empty",
+
+
+        "projection": "rigid",
+
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

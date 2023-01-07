@@ -23,6 +23,12 @@ public class ModItems {
     public static final RegistryObject<Item> WARPED_PAPER = ITEMS.register("warped_paper",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
+    public static final RegistryObject<Item> VOID_QUARTZ = ITEMS.register("void_quartz",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
+    public static final RegistryObject<Item> FLAME_FEATHER = ITEMS.register("flame_feather",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
     public static final RegistryObject<Item> PHILOSOPHER_STONE = ITEMS.register("philosopher_stone",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1).rarity(Rarity.RARE)));
 
@@ -62,6 +68,8 @@ public class ModItems {
     public static final RegistryObject<Item> END_DUST = ITEMS.register("end_dust",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
+    public static final RegistryObject<Item> GELATIN = ITEMS.register("gelatin",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
     public static final RegistryObject<Item> CHOCOLATE_BAR = ITEMS.register("chocolate_bar",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.CHOCOLATE_BAR)));
@@ -69,12 +77,22 @@ public class ModItems {
     public static final RegistryObject<Item> CANDY_CANE= ITEMS.register("candy_cane",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.CANDY_CANE)));
 
+    public static final RegistryObject<Item> CANDY_CORN= ITEMS.register("candy_corn",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.CANDY_CORN)));
+
     public static final RegistryObject<Item> GHAST_BERRY= ITEMS.register("ghast_berry",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.GHAST_BERRY)));
 
     public static final RegistryObject<Item> ENDER_FRUIT= ITEMS.register("ender_fruit",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.ENDER_FRUIT)));
 
+    public static final RegistryObject<Item> PEPPERMINT_BARK= ITEMS.register("peppermint_bark",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.PEPPERMINT_BARK)));
+
+    public static final RegistryObject<Item> APPLE_PIE= ITEMS.register("apple_pie",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.APPLE_PIE)));
+    public static final RegistryObject<Item> BERRY_PIE= ITEMS.register("berry_pie",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.BERRY_PIE)));
 
     public static final RegistryObject<Item> AMETHYST_SWORD = ITEMS.register("amethyst_sword",
             () -> new SwordItem(ModTiers.AMETHYST, 2, 3f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)
@@ -258,7 +276,7 @@ public class ModItems {
 
     //CROWN
     public static final RegistryObject<Item> CROWN = ITEMS.register("crown",
-            () -> new ArmorItem(ModArmorMaterials.CROWN, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new CrownItem(ModArmorMaterials.CROWN, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<Item> MINT_SEEDS = ITEMS.register("mint_seeds",
             () -> new ItemNameBlockItem(ModBlocks.MINT_CROP.get(),new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
@@ -269,10 +287,10 @@ public class ModItems {
             () -> new GoldenShearsItem(new Item.Properties().durability(120).tab(CreativeModeTab.TAB_TOOLS)));
 
     public static final RegistryObject<Item> DIAMOND_SHEARS = ITEMS.register("diamond_shears",
-            () -> new DiamondShearsItem(new Item.Properties().durability(480).tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new DiamondShearsItem(new Item.Properties().durability(1040).tab(CreativeModeTab.TAB_TOOLS)));
 
     public static final RegistryObject<Item> NETHERITE_SHEARS = ITEMS.register("netherite_shears",
-            () -> new NetheriteShearsItem(new Item.Properties().durability(560).tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new NetheriteShearsItem(new Item.Properties().durability(2160).tab(CreativeModeTab.TAB_TOOLS)));
 
 
     public static final RegistryObject<Item> STAR_BLADE = ITEMS.register("star_blade",

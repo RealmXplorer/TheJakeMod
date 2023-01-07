@@ -27,6 +27,7 @@
     "jakemod:polished_andesite_brick_wall",
     "jakemod:polished_diorite_brick_wall",
     "jakemod:tuff_wall",
+    "jakemod:quartz_brick_wall",
     "jakemod:polished_tuff_brick_wall",
     "jakemod:snow_brick_wall",
     "jakemod:sandstone_brick_wall",
@@ -40,6 +41,8 @@
     "jakemod:stone_tile_wall",
     "jakemod:soul_sandstone_wall",
     "jakemod:soul_sandstone_brick_wall",
-    "jakemod:purpur_wall"
+    "jakemod:purpur_wall",
+    "jakemod:grimstone_brick_wall",
+    "jakemod:void_quartz_brick_wall"
   ]
 }

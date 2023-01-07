@@ -1,0 +1,7 @@
+
+{
+  "type": "forge:add_features",
+  "biomes": "#jakemod:has_jungle_trees",
+  "features": "jakemod:add_jungle_carpet",
+  "step": "vegetal_decoration"
+}
