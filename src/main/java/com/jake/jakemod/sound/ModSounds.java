@@ -20,6 +20,8 @@ public class ModSounds {
 
     public static RegistryObject<SoundEvent> MUSIC_DISC_KINGSTEAD = registerSoundEvent("music_disc_kingstead");
 
+    public static RegistryObject<SoundEvent> MUSIC_DISC_DECEMBER = registerSoundEvent("music_disc_december");
+
     //public static final RegistryObject<SoundEvent> SOUL_GLASS_BREAK =
       //      registerSoundEvent("soul_glass_break");
 

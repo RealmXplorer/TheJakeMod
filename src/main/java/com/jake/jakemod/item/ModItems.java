@@ -80,6 +80,8 @@ public class ModItems {
     public static final RegistryObject<Item> CANDY_CORN= ITEMS.register("candy_corn",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.CANDY_CORN)));
 
+    public static final RegistryObject<Item> SUSHI= ITEMS.register("sushi",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.SUSHI)));
     public static final RegistryObject<Item> GHAST_BERRY= ITEMS.register("ghast_berry",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.GHAST_BERRY)));
 
@@ -314,6 +316,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> MUSIC_DISC_KINGSTEAD = ITEMS.register("music_disc_kingstead",
             () -> new RecordItem(4, ModSounds.MUSIC_DISC_KINGSTEAD, new Item.Properties().tab(CreativeModeTab.TAB_MISC).rarity(Rarity.RARE).stacksTo(1),3820));
+
+    public static final RegistryObject<Item> MUSIC_DISC_DECEMBER = ITEMS.register("music_disc_december",
+            () -> new RecordItem(4, ModSounds.MUSIC_DISC_DECEMBER, new Item.Properties().tab(CreativeModeTab.TAB_MISC).rarity(Rarity.RARE).stacksTo(1),3820));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

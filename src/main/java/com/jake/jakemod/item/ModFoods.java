@@ -19,5 +19,7 @@ public class ModFoods {
 
     APPLE_PIE = (new FoodProperties.Builder()).nutrition(7).saturationMod(0.3F).build(),
 
-    BERRY_PIE = (new FoodProperties.Builder()).nutrition(6).saturationMod(0.3F).build();
+    BERRY_PIE = (new FoodProperties.Builder()).nutrition(6).saturationMod(0.3F).build(),
+
+    SUSHI = (new FoodProperties.Builder()).nutrition(5).saturationMod(1F).build();
 }

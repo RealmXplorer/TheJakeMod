@@ -5,6 +5,9 @@
   "item.jakemod.music_disc_kingstead": "Music Disc",
   "item.jakemod.music_disc_kingstead.desc": "i2o2 - Kingstead",
 
+  "item.jakemod.music_disc_december": "Music Disc",
+  "item.jakemod.music_disc_december.desc": "i2o2 - december",
+
   "item.jakemod.copper_nugget": "Copper Nugget",
 
   "item.jakemod.rose_gold_ingot": "Rose Gold Ingot",
@@ -139,6 +142,8 @@
 
   "item.jakemod.mint": "Mint",
   "item.jakemod.mint_seeds": "Mint Seeds",
+
+  "item.jakemod.sushi": "Sushi",
 
   "item.jakemod.apple_pie": "Apple Pie",
   "item.jakemod.berry_pie": "Sweet Berry Pie",

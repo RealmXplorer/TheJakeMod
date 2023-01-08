@@ -15,6 +15,14 @@
       }
     ]
   },
+  "music_disc_december": {
+    "sounds": [
+      {
+        "name": "jakemod:music_disc_december",
+        "stream": true
+      }
+    ]
+  },
   "soul_glass_break": {
     "subtitle": "sounds.jakemod.soul_glass_break",
     "sounds": [
