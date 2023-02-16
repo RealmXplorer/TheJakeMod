@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#i#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "jakemod:salt_block"
+    },
+    "i": {
+      "item": "minecraft:torch"
+    }
+  },
+  "result": {
+    "item": "jakemod:salt_lamp_block"
+  }
+}

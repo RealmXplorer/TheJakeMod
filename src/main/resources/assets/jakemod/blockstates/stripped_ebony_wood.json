@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "jakemod:block/stripped_ebony_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "jakemod:block/stripped_ebony_wood"
+    },
+    "axis=z": {
+      "model": "jakemod:block/stripped_ebony_wood_horizontal",
+      "x": 90
+    }
+  }
+}

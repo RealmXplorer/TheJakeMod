@@ -21,6 +21,16 @@
   "item.jakemod.abysson": "Abysson",
 
   "item.jakemod.void_quartz": "Void Quartz",
+  "item.jakemod.seasoned_steak": "Seasoned Steak",
+  "item.jakemod.seasoned_chicken": "Seasoned Chicken",
+  "item.jakemod.seasoned_rabbit": "Seasoned Rabbit",
+  "item.jakemod.seasoned_porkchop": "Seasoned Porkchop",
+  "item.jakemod.seasoned_cod": "Seasoned Cod",
+  "item.jakemod.seasoned_salmon": "Seasoned Salmon",
+  "item.jakemod.cured_flesh": "Cured Flesh",
+  "item.jakemod.jerky": "Jerky",
+  "item.jakemod.salt": "Salt",
+  "item.jakemod.sulfur": "Sulfur",
 
   "item.jakemod.warped_paper": "Warped Paper",
   "item.jakemod.warped_book": "Warped Book",
@@ -57,6 +67,7 @@
   "item.jakemod.gold_shears": "Golden Shears",
   "item.jakemod.diamond_shears": "Diamond-tipped Shears",
   "item.jakemod.netherite_shears": "Netherite Shears",
+  "item.jakemod.star_shears": "Starlight Shears",
 
   "item.jakemod.copper_helmet": "Copper Helmet",
   "item.jakemod.copper_chestplate": "Copper Chestplate",
@@ -130,6 +141,8 @@
 
   "item.jakemod.peppermint_bark": "Peppermint Bark",
 
+  "item.jakemod.golden_potato": "Golden Potato",
+
   "item.jakemod.cocoa_powder": "Cocoa Powder",
   "item.jakemod.chocolate_bar": "Chocolate Bar",
 
@@ -144,6 +157,8 @@
   "item.jakemod.mint_seeds": "Mint Seeds",
 
   "item.jakemod.sushi": "Sushi",
+
+  "item.jakemod.shulker_binding": "Shulker Binding",
 
   "item.jakemod.apple_pie": "Apple Pie",
   "item.jakemod.berry_pie": "Sweet Berry Pie",
@@ -172,6 +187,11 @@
   "item.minecraft.splash_potion.effect.levitation_potion": "Splash Potion of Levitation",
   "item.minecraft.lingering_potion.effect.levitation_potion": "Lingering Potion of Levitation",
   "item.minecraft.tipped_arrow.effect.levitation_potion": "Arrow of Levitation",
+
+  "item.minecraft.potion.effect.hunger_potion": "Hunger Potion",
+  "item.minecraft.splash_potion.effect.hunger_potion": "Splash Potion of Hunger",
+  "item.minecraft.lingering_potion.effect.hunger_potion": "Lingering Potion of Hunger",
+  "item.minecraft.tipped_arrow.effect.hunger_potion": "Arrow of Hunger",
 
   "block.jakemod.polished_granite_bricks": "Polished Granite Bricks",
   "block.jakemod.polished_granite_brick_stairs": "Polished Granite Brick Stairs",
@@ -296,6 +316,7 @@
   "block.jakemod.potted_red_rose": "Potted Rose",
 
   "block.jakemod.bone_flower": "Bone Flower",
+  "block.jakemod.potted_bone_flower": "Potted Bone Flower",
 
   "block.jakemod.rose_gold_block": "Block of Rose Gold",
 
@@ -322,6 +343,7 @@
   "block.jakemod.red_sandstone_brick_wall": "Red Sandstone Brick Wall",
 
   "block.jakemod.blaze_bundle": "Blaze Rod Bundle",
+  "block.jakemod.bone_bundle": "Bone Bundle",
 
   "block.jakemod.end_sand": "End Sand",
   "block.jakemod.void_lantern": "Void Lantern",
@@ -339,6 +361,25 @@
   "block.jakemod.chorus_door": "Chorus Door",
   "block.jakemod.chorus_trapdoor": "Chorus Trapdoor",
   "block.jakemod.chorus_button": "Chorus Button",
+
+  "block.jakemod.salt_lamp_block": "Salt Lamp Block",
+
+  "block.jakemod.ebony_sapling": "Ebony Sapling",
+  "block.jakemod.ebony_leaves": "Ebony Leaves",
+  "block.jakemod.ebony_leaf_carpet": "Ebony Leaf Carpet",
+  "block.jakemod.ebony_log": "Ebony Log",
+  "block.jakemod.stripped_ebony_log": "Stripped Ebony Log",
+  "block.jakemod.stripped_ebony_wood": "Stripped Ebony Wood",
+  "block.jakemod.ebony_wood": "Ebony Wood",
+  "block.jakemod.ebony_pressure_plate": "Ebony Pressure Plate",
+  "block.jakemod.ebony_planks": "Ebony Planks",
+  "block.jakemod.ebony_stairs": "Ebony Stairs",
+  "block.jakemod.ebony_slab": "Ebony Slab",
+  "block.jakemod.ebony_fence": "Ebony Fence",
+  "block.jakemod.ebony_fence_gate": "Ebony Fence Gate",
+  "block.jakemod.ebony_door": "Ebony Door",
+  "block.jakemod.ebony_trapdoor": "Ebony Trapdoor",
+  "block.jakemod.ebony_button": "Ebony Button",
 
   "block.jakemod.abysson_ore": "Abysson Ore",
   "block.jakemod.abysson_block": "Abysson Block",
@@ -377,7 +418,9 @@
   "block.jakemod.cut_basalt": "Cut Basalt",
   "block.jakemod.cut_basalt_slab": "Cut Basalt Slab",
   "block.jakemod.cut_basalt_stairs": "Cut Basalt Stairs",
-  
+
+  "block.jakemod.salt_block": "Block of Salt",
+
   "block.jakemod.basalt_bricks": "Basalt Bricks",
   "block.jakemod.basalt_brick_slab": "Basalt Brick Slab",
   "block.jakemod.basalt_brick_stairs": "Basalt Brick Stairs",
@@ -398,8 +441,13 @@
   "block.jakemod.mint_crop": "Mint Crop",
 
   "block.jakemod.nether_coal_ore": "Nether Coal Ore",
+  "block.jakemod.sulfur_ore": "Sulfur Ore",
 
-  "block.jakemod.stick_block": "Bundled Stick Block",
+  "block.jakemod.stick_block": "Stick Bundle",
+
+  "block.jakemod.black_ice": "Black Ice",
+
+  "block.jakemod.sulfur_block": "Sulfur Block",
 
   "block.jakemod.snow_bricks": "Snow Bricks",
   "block.jakemod.snow_brick_stairs": "Snow Brick Stairs",
@@ -410,6 +458,8 @@
   "block.jakemod.stone_tile_stairs": "Stone Tile Stairs",
   "block.jakemod.stone_tile_slab": "Stone Tile Slab",
   "block.jakemod.stone_tile_wall": "Stone Tile Wall",
+
+  "block.jakemod.star_block": "Block of Starlight",
 
   "itemGroup.jaketab": "The Jake Mod"
 }

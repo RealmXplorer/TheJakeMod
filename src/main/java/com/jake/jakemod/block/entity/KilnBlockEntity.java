@@ -14,6 +14,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
+import com.jake.jakemod.screen.KilnBlockMenu;
 import net.minecraft.world.inventory.SmokerMenu;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
@@ -52,6 +53,6 @@ public class KilnBlockEntity extends AbstractFurnaceBlockEntity {
     }
 
     protected AbstractContainerMenu createMenu(int pId, Inventory pPlayer) {
-        return new SmokerMenu(pId, pPlayer, this, this.dataAccess);
+        return new KilnBlockMenu(pId, pPlayer, this, this.dataAccess);
     }
 }

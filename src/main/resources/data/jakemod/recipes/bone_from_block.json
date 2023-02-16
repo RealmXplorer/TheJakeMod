@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "jakemod:bone_bundle"
+  }
+],
+
+  "result": {
+    "item": "minecraft:bone",
+    "count": 9
+  }
+}

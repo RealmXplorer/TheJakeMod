@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "jakemod:stick_block"
+    },
+    "X": [
+      {
+        "item": "minecraft:coal_block"
+      },
+      {
+        "item": "jakemod:charcoal_block"
+      }
+    ]
+  },
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "result": {
+    "count": 36,
+    "item": "minecraft:torch"
+  }
+}

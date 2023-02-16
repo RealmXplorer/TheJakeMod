@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "jakemod:star_block"
+  }
+],
+
+  "result": {
+    "item": "jakemod:star_shard",
+    "count": 9
+  }
+}

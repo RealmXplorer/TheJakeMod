@@ -13,8 +13,8 @@ public class ModRecipes {
             DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, JakeMod.MOD_ID);
 
 
-//    public static final RegistryObject<RecipeSerializer<KilnBlockRecipe>> KILN_BLOCK_SERIALIZER =
-//            SERIALIZERS.register("kiln_firing", () -> KilnBlockRecipe.Serializer.INSTANCE);
+//    public static final RegistryObject<? extends RecipeSerializer<?>> KILN_BLOCK_SERIALIZER =
+//            SERIALIZERS.register("kiln_firing", () -> KilnBlockRecipe.getSerializer());
 
 
 

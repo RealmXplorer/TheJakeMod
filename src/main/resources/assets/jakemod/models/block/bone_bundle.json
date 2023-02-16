@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "jakemod:block/bone_bundle_top",
+    "side": "jakemod:block/bone_bundle"
+  }
+}

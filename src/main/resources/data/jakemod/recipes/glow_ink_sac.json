@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glow_lichen"
+    },
+    "X": {
+      "item": "minecraft:ink_sac"
+    }
+  },
+  "result": {
+    "item": "minecraft:glow_ink_sac"
+  }
+}

@@ -1,25 +1,6 @@
 {
-    "parent": "block/block",
+    "parent": "block/cube_all",
     "textures": {
-        "particle": "jakemod:block/blaze_bundle_side",
-        "down": "jakemod:block/blaze_bundle_bottom",
-        "up": "jakemod:block/blaze_bundle_top",
-        "north": "jakemod:block/blaze_bundle_side",
-        "east": "jakemod:block/blaze_bundle_side",
-        "south": "jakemod:block/blaze_bundle_side",
-        "west": "jakemod:block/blaze_bundle_side"
-    },
-    "elements": [
-        {   "from": [ 0, 0, 0 ],
-            "to": [ 16, 16, 16 ],
-            "faces": {
-                "down":  { "texture": "#down", "cullface": "down" },
-                "up":    { "texture": "#up", "cullface": "up" },
-                "north": { "texture": "#north", "cullface": "north" },
-                "south": { "uv": [16, 0, 0, 16], "texture": "#south", "cullface": "south" },
-                "west":  { "texture": "#west", "cullface": "west" },
-                "east":  { "uv": [16, 0, 0, 16], "texture": "#east", "cullface": "east" }
-            }
-        }
-    ]
+        "all": "jakemod:block/blaze_bundle"
+    }
 }

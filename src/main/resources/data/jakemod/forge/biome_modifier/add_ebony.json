@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#jakemod:has_ebony_trees",
+  "features": "jakemod:ebony_placed",
+  "step": "vegetal_decoration"
+}

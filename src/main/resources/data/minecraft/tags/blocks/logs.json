@@ -4,6 +4,11 @@
     "jakemod:chorus_log",
     "jakemod:chorus_wood",
     "jakemod:stripped_chorus_log",
-    "jakemod:stripped_chorus_wood"
+    "jakemod:stripped_chorus_wood",
+
+    "jakemod:ebony_log",
+    "jakemod:ebony_wood",
+    "jakemod:stripped_ebony_log",
+    "jakemod:stripped_ebony_wood"
   ]
 }

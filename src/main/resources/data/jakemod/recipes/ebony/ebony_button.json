@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "jakemod:ebony_planks"
+  }
+],
+
+  "result": {
+    "item": "jakemod:ebony_button"
+  }
+}

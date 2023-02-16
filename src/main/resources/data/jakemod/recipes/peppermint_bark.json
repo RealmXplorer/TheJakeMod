@@ -6,13 +6,13 @@
   ],
   "key": {
     "X": {
-      "item": "jake_mod:candy_cane"
+      "item": "jakemod:candy_cane"
     },
     "#": {
-      "item": "jake_mod:chocolate_bar"
+      "item": "jakemod:chocolate_bar"
     }
   },
   "result": {
-    "item": "jake_mod:peppermint_bark"
+    "item": "jakemod:peppermint_bark"
   }
 }

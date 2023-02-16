@@ -20,7 +20,10 @@ public class ModPotions {
             () -> new Potion(new MobEffectInstance(MobEffects.GLOWING, 2040, 0)));
 
     public static final RegistryObject<Potion> LEVITATION_POTION = POTIONS.register("levitation_potion",
-            () -> new Potion(new MobEffectInstance(MobEffects.LEVITATION, 100, 0)));
+            () -> new Potion(new MobEffectInstance(MobEffects.LEVITATION, 500, 0)));
+
+    public static final RegistryObject<Potion> HUNGER_POTION = POTIONS.register("hunger_potion",
+            () -> new Potion(new MobEffectInstance(MobEffects.HUNGER, 1000, 1)));
 
     public static void register(IEventBus eventBus) {
     POTIONS.register(eventBus);

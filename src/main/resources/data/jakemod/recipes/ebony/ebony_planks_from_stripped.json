@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "jakemod:stripped_ebony_log"
+    }
+  ],
+
+  "result": {
+    "item": "jakemod:ebony_planks",
+    "count": 4
+  }
+}

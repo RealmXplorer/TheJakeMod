@@ -153,6 +153,13 @@
     "jakemod:void_quartz_brick_wall",
 
     "jakemod:chiseled_void_quartz_block",
-    "jakemod:candy_corn_block"
+    "jakemod:candy_corn_block",
+    "jakemod:star_block",
+    "jakemod:bone_bundle",
+    "jakemod:salt_block",
+    "jakemod:salt_lamp_block",
+
+    "jakemod:sulfur_ore",
+    "jakemod:sulfur_block"
   ]
 }

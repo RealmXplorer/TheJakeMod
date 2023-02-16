@@ -2,6 +2,7 @@ package com.jake.jakemod.screen;
 
 import com.jake.jakemod.JakeMod;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import com.jake.jakemod.screen.KilnBlockMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraftforge.eventbus.api.IEventBus;

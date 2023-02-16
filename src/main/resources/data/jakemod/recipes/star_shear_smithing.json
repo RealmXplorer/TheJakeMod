@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "jakemod:star_shard"
+  },
+  "base": {
+    "item": "jakemod:netherite_shears"
+  },
+  "result": {
+    "item": "jakemod:star_shears"
+  }
+}

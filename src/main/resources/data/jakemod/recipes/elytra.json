@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#b#",
+    "#b#",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "b": {
+      "item": "jakemod:shulker_binding"
+    }
+  },
+  "result": {
+    "item": "minecraft:elytra"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "minecraft:coal"
+  },
+  {
+    "item": "jakemod:salt"
+  },
+  {
+    "item": "jakemod:sulfur"
+  }
+],
+
+  "result": {
+    "item": "minecraft:gunpowder",
+    "count": 1
+  }
+}

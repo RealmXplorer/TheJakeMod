@@ -93,6 +93,19 @@
     "jakemod:chorus_fence",
     "jakemod:chorus_fence_gate",
     "jakemod:chorus_door",
-    "jakemod:chorus_trapdoor"
+    "jakemod:chorus_trapdoor",
+
+    "jakemod:ebony_log",
+    "jakemod:stripped_ebony_log",
+    "jakemod:stripped_ebony_wood",
+    "jakemod:ebony_planks",
+    "jakemod:ebony_wood",
+    "jakemod:ebony_slab",
+    "jakemod:ebony_pressure_plate",
+    "jakemod:ebony_stairs",
+    "jakemod:ebony_fence",
+    "jakemod:ebony_fence_gate",
+    "jakemod:ebony_door",
+    "jakemod:ebony_trapdoor"
   ]
 }
